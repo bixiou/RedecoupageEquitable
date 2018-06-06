@@ -1,0 +1,101 @@
+id,label,description,rank
+http://www.wikidata.org/entity/P39,fonction,"fonction occupée (politique, ecclésiastique, etc.)",2118
+http://www.wikidata.org/entity/P102,parti politique,parti dont la personne est membre,666
+http://www.wikidata.org/entity/P106,occupation,"qualité d'une personne (métier, hobby...), voir aussi ""domaine d'activité"" (Property:P101) et ""fonction"" (Property:P39)",573
+http://www.wikidata.org/entity/P1412,"langues parlées, écrites ou signées","langue(s) parlée(s) écrite(s) ou signée(s) par une personne, y compris  la langue maternelle",512
+http://www.wikidata.org/entity/P2002,identifiant Twitter,identifiant pour une personne ou une organisation sur Twitter,507
+http://www.wikidata.org/entity/P27,pays de nationalité,État dont la personne possède la nationalité,504
+http://www.wikidata.org/entity/P735,prénom,nom individuel d'une personne,503
+http://www.wikidata.org/entity/P1559,nom dans la langue maternelle de la personne,nom d'une personne dans sa langue maternelle,501
+http://www.wikidata.org/entity/P103,langue maternelle,première langue apprise par le sujet,501
+http://www.wikidata.org/entity/P4123,identifiant Assemblée nationale en France,identifiant d'un député sur le site de l'Assemblée nationale en France (ne pas confondre avec l'identifiant Sycomore),500
+http://www.wikidata.org/entity/P1045,identifiant Sycomore,"identifiant dans la base de données Sycomore des députés français, Assemblée nationale (France)",500
+http://www.wikidata.org/entity/P734,nom de famille,nom de famille d'une personne,500
+http://www.wikidata.org/entity/P569,date de naissance,date à laquelle la personne est née,500
+http://www.wikidata.org/entity/P31,nature de l'élément,Cet élément est un exemple spécifique de cette classe qui en précise la nature. Ne pas confondre avec la propriété P279 (sous-classe de).,500
+http://www.wikidata.org/entity/P21,sexe ou genre,"pour les humains, soit masculin (Q6581097), féminin (Q6581072), intersexué (Q1097630), femme transgenre (Q1052281), homme transgenre (Q2449503), genderqueer (Q48270) ; pour les animaux, mâle (Q44148) ou femelle (Q43445)",500
+http://www.wikidata.org/entity/P19,lieu de naissance,"lieu où la personne est née, le plus spécifique possible (exemple : ville plutôt que pays)",500
+http://www.wikidata.org/entity/P4124,identifiant Who's Who in France,identifiant unique dans l'annuaire biographique en ligne Who's who in France,479
+http://www.wikidata.org/entity/P937,lieu de travail,lieu où une ou plusieurs  personnes ont travaillé,458
+http://www.wikidata.org/entity/P69,scolarité,établissement éducatif fréquenté,367
+http://www.wikidata.org/entity/P18,image,image illustrant l'élément ; voir page de discussion pour d'autres propriétés,361
+http://www.wikidata.org/entity/P214,identifiant Fichier d'autorité international virtuel,Identifiant du Fichier d'autorité international virtuel,353
+http://www.wikidata.org/entity/P268,identifiant Bibliothèque nationale de France,identifiant d'autorité dans le catalogue de la Bibliothèque nationale de France,339
+http://www.wikidata.org/entity/P213,identifiant ISNI,code international normalisé des noms,326
+http://www.wikidata.org/entity/P646,identifiant Freebase,identifiant de l'entité dans la base de données Freebase,286
+http://www.wikidata.org/entity/P269,identifiant IdRef,numéro d'autorité dans la base du SUDOC (Système universitaire de documentation),283
+http://www.wikidata.org/entity/P373,catégorie Commons,"nom de la catégorie de Wikimedia Commons (sans le préfixe ""Category:"")",276
+http://www.wikidata.org/entity/P856,site officiel,URL du site web officiel de l'élément,211
+http://www.wikidata.org/entity/P2013,identifiant Facebook,identifiant pour une personne ou une organisation sur Facebook,161
+http://www.wikidata.org/entity/P244,identifiant bibliothèque du Congrès,identifiant attribué aux données d'autorité par la Bibliothèque du Congrès (voir aussi P1144),92
+http://www.wikidata.org/entity/P227,identifiant Gemeinsame Normdatei,numéro de la notice d'autorité dans le Gemeinsame Normdatei (GND),78
+http://www.wikidata.org/entity/P166,distinction reçue,"récompense reçue par une personne, une organisation ou une œuvre",74
+http://www.wikidata.org/entity/P22,père,"lien familial, parent direct de sexe masculin",30
+http://www.wikidata.org/entity/P26,conjoint,personne liée par le mariage ou une union civile,29
+http://www.wikidata.org/entity/P463,membre de,est membre d'une organisation spécifique. Ne doit pas être utilisé pour les groupe ethniques et sociaux,27
+http://www.wikidata.org/entity/P935,galerie Commons,nom de la page de la galerie Wikimedia Commons relative à cet item,26
+http://www.wikidata.org/entity/P2163,identifiant FAST,identificateur de notice d'autorité de données FAST disponible sur WorldCat,22
+http://www.wikidata.org/entity/P108,employeur,organisation pour laquelle le sujet travaille ou a travaillé,20
+http://www.wikidata.org/entity/P3373,frère ou sœur,"frère ou sœur de l'élément. Pour beaux-frères/sœurs, utiliser ""parenté"" (P1038).",18
+http://www.wikidata.org/entity/P1186,identifiant Député européen,identifier for a past or present MEP in a directory of all members of the European Parliament,18
+http://www.wikidata.org/entity/P2671,identifiant du Google Knowledge Graph,identifiant pour l'API du Knowledge Graph de Google (commençant par /g/),17
+http://www.wikidata.org/entity/P4434,identifiant LesBiographies.com,"notice sur le site LesBiographies.com, un dictionnaire biographique édité par la Société générale de presse",17
+http://www.wikidata.org/entity/P2732,identifiant Persée d'un auteur,"identifier for an author, in Persée, an open access digital library of French-language scholarly journals, established by the Ministry of National Education of France",17
+http://www.wikidata.org/entity/P1808,identifiant sénateur français,identifiant sur le site du Sénat français senat.fr,15
+http://www.wikidata.org/entity/P1207,identifiant NUKAT,numéro de contrôle d'autorité du Catalogue de l'union polonaise,15
+http://www.wikidata.org/entity/P1006,identifiant Bibliothèque royale des Pays-Bas,identifiant de la Bibliothèque royale des Pays-Bas,14
+http://www.wikidata.org/entity/P1344,participant à,événement auquel une personne ou une organisation a participé (inverse de P710 et P1923),12
+http://www.wikidata.org/entity/P1331,identifiant de l'Assemblée parlementaire du Conseil de l'Europe,identifier for a member of the Parliamentary Assembly of the Council of Europe,12
+http://www.wikidata.org/entity/P3630,identifiant Babelio d'un auteur,identifiant d'un auteur sur le site littéraire Babelio,12
+http://www.wikidata.org/entity/P3219,identifiant Encyclopædia Universalis en ligne,identifiant d'un article de la version en ligne de l'Encyclopædia Universalis,11
+http://www.wikidata.org/entity/P1284,identifiant Munzinger,identifier on the Munzinger Archiv,11
+http://www.wikidata.org/entity/P512,grade universitaire,grade universitaire d'une personne,9
+http://www.wikidata.org/entity/P1971,nombre d'enfants,nombre d'enfants d'une personne (à utiliser dans le cas où la liste complète des enfants ne figure pas dans P40),9
+http://www.wikidata.org/entity/P25,mère,"lien familial, parent direct de sexe féminin",9
+http://www.wikidata.org/entity/P40,enfant,lien familial direct indiquant que l'objet du lien est un fils ou une fille du sujet (indépendamment de son âge),7
+http://www.wikidata.org/entity/P2003,identifiant Instagram,identifiant pour une personne ou une organisation sur Instagram,7
+http://www.wikidata.org/entity/P345,identifiant IMDb,"identifiant Internet Movie Database (IMDb) avec un préfixe (tt-, nm-, ch-, co-, ni-)",7
+http://www.wikidata.org/entity/P551,résidence,lieu où la personne réside ou a résidé,6
+http://www.wikidata.org/entity/P1477,nom de naissance,"nom d'une personne à la naissance, si différent de son nom actuel ou connu",6
+http://www.wikidata.org/entity/P910,catégorie,catégorie Wikimédia principale de l'élément,6
+http://www.wikidata.org/entity/P140,religion,"religion de la personne, de l'organisation ou de l'édifice, ou associée avec ce sujet",6
+http://www.wikidata.org/entity/P570,date de mort,date à laquelle le sujet est mort,5
+http://www.wikidata.org/entity/P20,lieu de mort,lieu le plus précis possible où le sujet est mort (ville au lieu de pays par exemple),5
+http://www.wikidata.org/entity/P1038,parentèle,"personne ayant un lien familial avec le sujet (qualifier avec ""type de parenté"", P1039 ; utiliser une propriété plus précise lorsque c'est possible)",5
+http://www.wikidata.org/entity/P1196,circonstances de la mort,"circonstances de la mort d'une personne : causes naturelles, accident, suicide, homicide, enquête en cours, ... Utilisez « cause de la mort » (P509) pour des causes plus immédiates comme une attaque cardiaque ou un accident de la route.",4
+http://www.wikidata.org/entity/P1263,identifiant NNDB,base de données biographiques,4
+http://www.wikidata.org/entity/P2397,identifiant de chaîne YouTube,identifiant de la chaine Youtube d'une personne ou d'une organisation (à ne pas confondre avec le nom d'une chaine),4
+http://www.wikidata.org/entity/P1015,identifiant BIBSYS,identifiant de la base bibliothécaire norvégienne BIBSYS,4
+http://www.wikidata.org/entity/P4369,identifiant Cairn d'un auteur,"identifiant d'un auteur dans Cairn, catalogue en ligne des publications scientifiques francophones",4
+http://www.wikidata.org/entity/P1741,identifiant Gemeenschappelijke Thesaurus Audiovisuele Archieven,identifiant du Common Thesaurus of Audiovisual Archives néerlandais,4
+http://www.wikidata.org/entity/P509,cause de la mort,"cause sous-jacente ou immédiate de la mort. La cause sous-jacente (p. ex. accident de voiture, cancer) est préférée. Utiliser « circonstance de la mort » (P1196) pour une description plus large, p. ex. causes naturelles, accidents, homicides, etc.",3
+http://www.wikidata.org/entity/P184,directeur de thèse,personne ayant dirigé les études doctorales du sujet,3
+http://www.wikidata.org/entity/P641,sport,sport associé à l'élément,3
+http://www.wikidata.org/entity/P3430,identifiant Social Networks Archival Context,identifiant pour un élément dans le système Social Networks Archival Context,3
+http://www.wikidata.org/entity/P1977,identifiant de personne lesarchivesduspectacle,identifiant pour un acteur dans la base de données lesarchivesduspectacle des acteurs,3
+http://www.wikidata.org/entity/P793,événement clé,événement important associé au sujet,3
+http://www.wikidata.org/entity/P1296,identifiant Gran Enciclopèdia Catalana,identifiant de la Gran Enciclopèdia Catalana (GEC),3
+http://www.wikidata.org/entity/P109,signature,image de la signature d'une personne,3
+http://www.wikidata.org/entity/P3417,identifiant Quora d'un sujet,identifiant d'un sujet sur Quora (version anglaise),3
+http://www.wikidata.org/entity/P2035,profil LinkedIn,profil autobiographique public d'une personne sur Linkedin.com,3
+http://www.wikidata.org/entity/P1417,identifiant Encyclopædia Britannica en ligne,identifiant d'un article de la version en ligne de  l'Encyclopædia Britannica,3
+http://www.wikidata.org/entity/P898,transcription API,écriture dans l'alphabet phonétique international (API),3
+http://www.wikidata.org/entity/P3987,identifiant SHARE Catalogue,"identifiant d'un auteur dans le SHARE Catalogue, catalogue fédéré des données de plusieurs universités du sud de l'Italie",2
+http://www.wikidata.org/entity/P451,partenaire,personne avec qui le sujet vit mais n'est pas marié,2
+http://www.wikidata.org/entity/P1447,identifiant Sports Reference,identifiant sur le site sports-reference.com,2
+http://www.wikidata.org/entity/P2604,identifiant Kinopoisk de personne,identifiant pour une personne dans la base de données Kinopoisk.ru,2
+http://www.wikidata.org/entity/P726,candidat,personne ou parti qui est une option lors d'une élection,2
+http://www.wikidata.org/entity/P172,groupe ethnique,"ethnie du sujet (nécessite un TRÈS haut niveau de preuve. Cela signifie en général que 1) le sujet se définit lui-même comme tel, ou 2) cela est largement accepté par les chercheurs, ou 3) le sujet est fictionnel et dépeint comme tel)",2
+http://www.wikidata.org/entity/P3509,identifiant Dagens Nyheter d'un sujet,"identifiant d'un sujet, utilisé par le quotidien suédois Dagens Nyheter",2
+http://www.wikidata.org/entity/P3222,identifiant Nationalencyklopedin Online,identifiant d'un article sur le site Swedish Nationalencyklopedin (NE.se),2
+http://www.wikidata.org/entity/P1273,identifiant Bibliothèque nationale de Catalogne,identifiant d'autorité dans le catalogue de la Bibliothèque nationale de Catalogne,2
+http://www.wikidata.org/entity/P1266,identifiant AlloCiné nom,identifiant d'une personne sur le site AlloCiné,2
+http://www.wikidata.org/entity/P1343,décrit par,dictionnaire ou encyclopédie qui décrit l'entité,1
+http://www.wikidata.org/entity/P1019,URL  de syndication de contenu,"adresse internet des flux de nouvelles (RSS, atom feed, ...) de cette personne, organisation ou projet",1
+http://www.wikidata.org/entity/P742,pseudonyme,"nom sous lequel une personne est connue généralement, pas son nom légal",1
+http://www.wikidata.org/entity/P3479,identifiant Omni du sujet d'actualité,identifiant d'un sujet utilisé par Omni et Aftonbladet (journaux suédois),1
+http://www.wikidata.org/entity/P3106,identifiant Guardian du sujet d'actualité,identifant d'un sujet sur le site internet du journal britannique The Guardian,1
+http://www.wikidata.org/entity/P1617,identifiant BBC Things,identifiant dans la base de données BBC Things,1
+http://www.wikidata.org/entity/P396,identifiant SBN,Code d'autorité du Service bibliothécaire national (SBN) sous l'autorité de l'Institut central du catalogue unique des bibliothèques italiennes et des informations bibliographiques (ICCU),1
+http://www.wikidata.org/entity/P648,identifiant Open Library,"identifiant d'une oeuvre (""W""), d'une édition (""M"") ou d'un Auteur (""A"")",1
+http://www.wikidata.org/entity/P1448,nom officiel,"nom du sujet dans la (les) langue(s) officielle(s) de ce sujet (lieu, organisation...)",1

@@ -1,0 +1,579 @@
+deputeNom,circonscriptionNom,numero,population,groupeParlementaireNom
+Annick Girardin,circonscription législative de Saint-Pierre-et-Miquelon,975,6057,groupe La République en marche !
+Claire Guion-Firmin,circonscription de Saint-Barthélemy et Saint-Martin,977,9625,groupe Les Républicains
+Napole Polutele,circonscription de Wallis et Futuna,986,12197,"groupe UDI, Agir et indépendants"
+Claire Guion-Firmin,circonscription de Saint-Barthélemy et Saint-Martin,978,35684,groupe Les Républicains
+Pierre Morel-À-L'Huissier,circonscription de la Lozère,48,76309,"groupe UDI, Agir et indépendants"
+Jean-Baptiste Moreau,circonscription de la Creuse,23,120365,groupe La République en marche !
+Joël Giraud,deuxième circonscription des Hautes-Alpes,05,140916,groupe La République en marche !
+Pascale Boyer,première circonscription des Hautes-Alpes,05,140916,groupe La République en marche !
+Michel Zumkeller,deuxième circonscription du Territoire de Belfort,90,144483,"groupe UDI, Agir et indépendants"
+Ian Boucard,première circonscription du Territoire de Belfort,90,144483,groupe Les Républicains
+Vincent Descœur,première circonscription du Cantal,15,146219,groupe Les Républicains
+Jean-Yves Bony,deuxième circonscription du Cantal,15,146219,groupe Les Républicains
+Bénédicte Taurine,première circonscription de l'Ariège,09,152499,groupe La France insoumise
+Michel Larive,deuxième circonscription de l'Ariège,09,152499,groupe La France insoumise
+Paul-André Colombani,deuxième circonscription de la Corse-du-Sud,2A,152730,
+Jean-Jacques Ferrara,première circonscription de la Corse-du-Sud,2A,152730,groupe Les Républicains
+Christophe Castaner,deuxième circonscription des Alpes-de-Haute-Provence,04,161799,groupe La République en marche !
+Delphine Bagarry,première circonscription des Alpes-de-Haute-Provence,04,161799,groupe La République en marche !
+Huguette Tiegna,deuxième circonscription du Lot,46,173400,groupe La République en marche !
+Aurélien Pradié,première circonscription du Lot,46,173400,groupe Les Républicains
+Michel Castellani,première circonscription de la Haute-Corse,2B,174553,
+Jean-Félix Acquaviva,deuxième circonscription de la Haute-Corse,2B,174553,
+Bérangère Abba,première circonscription de la Haute-Marne,52,179154,groupe La République en marche !
+François Cornut-Gentille,deuxième circonscription de la Haute-Marne,52,179154,groupe Les Républicains
+Bertrand Pancher,première circonscription de la Meuse,55,190626,"groupe UDI, Agir et indépendants"
+Émilie Cariou,deuxième circonscription de la Meuse,55,190626,groupe La République en marche !
+Jean-René Cazeneuve,première circonscription du Gers,32,190932,groupe La République en marche !
+Gisèle Biémouret,deuxième circonscription du Gers,32,190932,groupe Nouvelle Gauche
+Patrice Perrot,deuxième circonscription de la Nièvre,58,211747,groupe La République en marche !
+Perrine Goulet,première circonscription de la Nièvre,58,211747,groupe La République en marche !
+Nicolas Forissier,deuxième circonscription législative de l'Indre,36,224200,groupe Les Républicains
+François Jolivet,première circonscription de l'Indre,36,224200,groupe La République en marche !
+Isabelle Valentin,première circonscription de la Haute-Loire,43,227034,groupe Les Républicains
+Jean-Pierre Vigier,deuxième circonscription de la Haute-Loire,43,227034,groupe Les Républicains
+Jeanine Dubié,deuxième circonscription des Hautes-Pyrénées,65,228582,
+Jean-Bernard Sempastous,première circonscription des Hautes-Pyrénées,65,228582,groupe La République en marche !
+Christophe Lejeune,deuxième circonscription de la Haute-Saône,70,237706,groupe La République en marche !
+Barbara Bessot-Ballot,première circonscription de la Haute-Saône,70,237706,groupe La République en marche !
+Christophe Jerretie,première circonscription de la Corrèze,19,241871,groupe La République en marche !
+Frédérique Meunier,deuxième circonscription de la Corrèze,19,241871,groupe Les Républicains
+Sylvia Pinel,deuxième circonscription de Tarn-et-Garonne,82,255274,
+Valérie Rabault,première circonscription de Tarn-et-Garonne,82,255274,groupe Nouvelle Gauche
+Ramlati Ali,première circonscription de Mayotte,976,256518,groupe La République en marche !
+Mansour Kamardine,deuxième circonscription de Mayotte,976,256518,groupe Les Républicains
+Jean-Marie Sermier,troisième circonscription du Jura,39,260587,groupe Les Républicains
+Danielle Brulebois,première circonscription du Jura,39,260587,groupe La République en marche !
+Marie-Christine Dalloz,deuxième circonscription du Jura,39,260587,groupe Les Républicains
+Philippe Dunoyer,première circonscription de Nouvelle-Calédonie,988,268767,"groupe UDI, Agir et indépendants"
+Philippe Gomès,deuxième circonscription de Nouvelle-Calédonie,988,268767,"groupe UDI, Agir et indépendants"
+Maina Sage,première circonscription de la Polynésie française,987,275918,"groupe UDI, Agir et indépendants"
+Moetai Brotherson,troisième circonscription de la Polynésie française,987,275918,groupe Gauche démocrate et républicaine
+Nicole Sanquer,deuxième circonscription de la Polynésie française,987,275918,"groupe UDI, Agir et indépendants"
+Jean-Luc Warsmann,troisième circonscription des Ardennes,08,277752,"groupe UDI, Agir et indépendants"
+Pierre Cordier,deuxième circonscription des Ardennes,08,277752,groupe Les Républicains
+Bérengère Poletti,première circonscription des Ardennes,08,277752,groupe Les Républicains
+Arnaud Viala,troisième circonscription de l'Aveyron,12,279169,groupe Les Républicains
+Anne Blanc,deuxième circonscription de l'Aveyron,12,279169,groupe La République en marche !
+Stéphane Mazars,première circonscription de l'Aveyron,12,279169,groupe La République en marche !
+Gabriel Serville,première circonscription de la Guyane,973,282731,groupe Gauche démocrate et républicaine
+Lénaïck Adam,deuxième circonscription de la Guyane,973,282731,groupe La République en marche !
+Jérôme Nury,troisième circonscription de l'Orne,61,286618,groupe Les Républicains
+Joaquim Pueyo,première circonscription de l'Orne,61,286618,groupe Nouvelle Gauche
+Véronique Louwagie,deuxième circonscription de l'Orne,61,286618,groupe Les Républicains
+Yannick Favennec,troisième circonscription de la Mayenne,53,307940,"groupe UDI, Agir et indépendants"
+Géraldine Bannier,deuxième circonscription de la Mayenne,53,307940,groupe Mouvement démocrate
+Guillaume Garot,première circonscription de la Mayenne,53,307940,groupe Nouvelle Gauche
+Nadia Essayan,deuxième circonscription du Cher,18,308992,groupe Mouvement démocrate
+Loïc Kervran,troisième circonscription du Cher,18,308992,groupe La République en marche !
+François Cormier-Bouligeon,première circonscription du Cher,18,308992,groupe La République en marche !
+Gérard Menuel,troisième circonscription de l'Aube,10,309056,groupe Les Républicains
+Grégory Besson-Moreau,première circonscription de l'Aube,10,309056,groupe La République en marche !
+Valérie Bazin-Malgras,deuxième circonscription de l'Aube,10,309056,groupe Les Républicains
+Olivier Dussopt,deuxième circonscription de l'Ardèche,07,324209,groupe Nouvelle Gauche
+Hervé Saulignac,première circonscription de l'Ardèche,07,324209,groupe Nouvelle Gauche
+Fabrice Brun,troisième circonscription de l'Ardèche,07,324209,groupe Les Républicains
+Guillaume Peltier,deuxième circonscription de Loir-et-Cher,41,333050,groupe Les Républicains
+Marc Fesneau,première circonscription de Loir-et-Cher,41,333050,groupe Mouvement démocrate
+Maurice Leroy,troisième circonscription de Loir-et-Cher,41,333050,"groupe UDI, Agir et indépendants"
+Olivier Damaisin,troisième circonscription de Lot-et-Garonne,47,333417,groupe La République en marche !
+Alexandre Freschi,deuxième circonscription de Lot-et-Garonne,47,333417,groupe La République en marche !
+Michel Lauzzana,première circonscription de Lot-et-Garonne,47,333417,groupe La République en marche !
+Michèle Crouzet,troisième circonscription de l'Yonne,89,340903,groupe La République en marche !
+André Villiers,deuxième circonscription de l'Yonne,89,340903,"groupe UDI, Agir et indépendants"
+Guillaume Larrivé,première circonscription de l'Yonne,89,340903,groupe Les Républicains
+Laurence Vanceunebrock-Mialon,deuxième circonscription de l'Allier,03,341613,groupe La République en marche !
+Bénédicte Peyrol,troisième circonscription de l'Allier,03,341613,groupe La République en marche !
+Jean-Paul Dufrègne,première circonscription de l'Allier,03,341613,groupe Gauche démocrate et républicaine
+Jérôme Lambert,troisième circonscription de la Charente,16,353613,groupe Nouvelle Gauche
+Sandra Marsaud,deuxième circonscription de la Charente,16,353613,groupe La République en marche !
+Thomas Mesnier,première circonscription de la Charente,16,353613,groupe La République en marche !
+Mireille Robert,troisième circonscription de l'Aude,11,366957,groupe La République en marche !
+Danièle Hérin,première circonscription de l'Aude,11,366957,groupe La République en marche !
+Alain Perea,deuxième circonscription de l'Aude,11,366957,groupe La République en marche !
+Jean-Jacques Gaultier,quatrième circonscription des Vosges,88,372016,groupe Les Républicains
+Christophe Naegelen,troisième circonscription des Vosges,88,372016,"groupe UDI, Agir et indépendants"
+Stéphane Viry,première circonscription des Vosges,88,372016,groupe Les Républicains
+Gérard Cherpion,deuxième circonscription des Vosges,88,372016,groupe Les Républicains
+Delphine Batho,deuxième circonscription des Deux-Sèvres,79,374435,groupe Nouvelle Gauche
+Jean-Marie Fiévet,troisième circonscription des Deux-Sèvres,79,374435,groupe La République en marche !
+Guillaume Chiche,première circonscription des Deux-Sèvres,79,374435,groupe La République en marche !
+Marie-Ange Magne,troisième circonscription de la Haute-Vienne,87,375795,groupe La République en marche !
+Jean-Baptiste Djebbari,deuxième circonscription de la Haute-Vienne,87,375795,groupe La République en marche !
+Sophie Beaudouin-Hubière,première circonscription de la Haute-Vienne,87,375795,groupe La République en marche !
+Josette Manin,première circonscription de la Martinique,972,380877,groupe Nouvelle Gauche
+Bruno Nestor Azerot,deuxième circonscription de la Martinique,972,380877,groupe Gauche démocrate et républicaine
+Serge Letchimy,troisième circonscription de la Martinique,972,380877,groupe Nouvelle Gauche
+Jean-Philippe Nilor,quatrième circonscription de la Martinique,972,380877,groupe Gauche démocrate et républicaine
+Marie-Christine Verdier-Jouclas,deuxième circonscription du Tarn,81,386543,groupe La République en marche !
+Philippe Folliot,première circonscription du Tarn,81,386543,groupe La République en marche !
+Jean Terlier,troisième circonscription du Tarn,81,386543,groupe La République en marche !
+Olivier Serva,première circonscription de la Guadeloupe,971,397990,groupe La République en marche !
+Justine Benin,deuxième circonscription de la Guadeloupe,971,397990,groupe Mouvement démocrate
+Max Mathiasin,troisième circonscription de la Guadeloupe,971,397990,groupe Mouvement démocrate
+Hélène Vainqueur-Christophe,quatrième circonscription de la Guadeloupe,971,397990,groupe Nouvelle Gauche
+Boris Vallaud,troisième circonscription des Landes,40,403234,groupe Nouvelle Gauche
+Lionel Causse,deuxième circonscription des Landes,40,403234,groupe La République en marche !
+Geneviève Darrieussecq,première circonscription des Landes,40,403234,groupe Mouvement démocrate
+Jean-Pierre Cubertafon,troisième circonscription de la Dordogne,24,415417,groupe Mouvement démocrate
+Jacqueline Dubois,quatrième circonscription de la Dordogne,24,415417,groupe La République en marche !
+Philippe Chassaing,première circonscription de la Dordogne,24,415417,groupe La République en marche !
+Michel Delpon,deuxième circonscription de la Dordogne,24,415417,groupe La République en marche !
+Typhanie Degois,première circonscription de la Savoie,73,428204,groupe La République en marche !
+Vincent Rolland,deuxième circonscription de la Savoie,73,428204,groupe Les Républicains
+Émilie Bonnivard,troisième circonscription de la Savoie,73,428204,groupe Les Républicains
+Patrick Mignola,quatrième circonscription de la Savoie,73,428204,groupe Mouvement démocrate
+Olivier Marleix,deuxième circonscription d'Eure-et-Loir,28,434035,groupe Les Républicains
+Guillaume Kasbarian,première circonscription d'Eure-et-Loir,28,434035,groupe La République en marche !
+Philippe Vigier,quatrième circonscription d'Eure-et-Loir,28,434035,"groupe UDI, Agir et indépendants"
+Laure de La Raudière,troisième circonscription d'Eure-et-Loir,28,434035,"groupe UDI, Agir et indépendants"
+Jean-Michel Clément,troisième circonscription de la Vienne,86,434887,groupe La République en marche !
+Nicolas Turquois,quatrième circonscription de la Vienne,86,434887,groupe Mouvement démocrate
+Jacques Savatier,première circonscription de la Vienne,86,434887,groupe La République en marche !
+Sacha Houlié,deuxième circonscription de la Vienne,86,434887,groupe La République en marche !
+Laurence Gayte,troisième circonscription des Pyrénées-Orientales,66,471038,groupe La République en marche !
+Romain Grau,première circonscription des Pyrénées-Orientales,66,471038,groupe La République en marche !
+Sébastien Cazenove,quatrième circonscription des Pyrénées-Orientales,66,471038,groupe La République en marche !
+Louis Aliot,deuxième circonscription des Pyrénées-Orientales,66,471038,
+Bertrand Sorre,deuxième circonscription de la Manche,50,499287,groupe La République en marche !
+Sonia Krimi,quatrième circonscription de la Manche,50,499287,groupe La République en marche !
+Stéphane Travert,troisième circonscription de la Manche,50,499287,groupe La République en marche !
+Philippe Gosselin,première circonscription de la Manche,50,499287,groupe Les Républicains
+Mireille Clapot,première circonscription de la Drôme,26,504637,groupe La République en marche !
+Célia de Lavergne,troisième circonscription de la Drôme,26,504637,groupe La République en marche !
+Emmanuelle Anthoine,quatrième circonscription de la Drôme,26,504637,groupe Les Républicains
+Alice Thourot,deuxième circonscription de la Drôme,26,504637,groupe La République en marche !
+Fadila Khattabi,troisième circonscription de la Côte-d'Or,21,533147,groupe La République en marche !
+Didier Paris,cinquième circonscription de la Côte-d'Or,21,533147,groupe La République en marche !
+Rémi Delatte,deuxième circonscription de la Côte-d'Or,21,533147,groupe Les Républicains
+Yolaine de Courson,quatrième circonscription de la Côte-d'Or,21,533147,groupe La République en marche !
+Didier Martin,première circonscription de la Côte-d'Or,21,533147,groupe La République en marche !
+Frédéric Barbier,quatrième circonscription du Doubs,25,536959,groupe La République en marche !
+Denis Sommer,troisième circonscription du Doubs,25,536959,groupe La République en marche !
+Fannette Charvier,première circonscription du Doubs,25,536959,groupe La République en marche !
+Annie Genevard,cinquième circonscription du Doubs,25,536959,groupe Les Républicains
+Éric Alauzet,deuxième circonscription du Doubs,25,536959,groupe La République en marche !
+Jacques Krabal,cinquième circonscription de l'Aisne,02,538659,groupe La République en marche !
+Aude Bono-Vandorme,première circonscription de l'Aisne,02,538659,groupe La République en marche !
+Marc Delatte,quatrième circonscription de l'Aisne,02,538659,groupe La République en marche !
+Jean-Louis Bricout,troisième circonscription de l'Aisne,02,538659,groupe Nouvelle Gauche
+Julien Dive,deuxième circonscription de l'Aisne,02,538659,groupe Les Républicains
+Benjamin Dirx,première circonscription de Saône-et-Loire,71,555408,groupe La République en marche !
+Josiane Corneloup,deuxième circonscription de Saône-et-Loire,71,555408,groupe Les Républicains
+Cécile Untermaier,quatrième circonscription de Saône-et-Loire,71,555408,groupe Nouvelle Gauche
+Rémy Rebeyrotte,troisième circonscription de Saône-et-Loire,71,555408,groupe La République en marche !
+Raphaël Gauvain,cinquième circonscription de Saône-et-Loire,71,555408,groupe La République en marche !
+Jean-François Cesarini,première circonscription de Vaucluse,84,557548,groupe La République en marche !
+Jean-Claude Bouchet,deuxième circonscription de Vaucluse,84,557548,groupe Les Républicains
+Jacques Bompard,quatrième circonscription de Vaucluse,84,557548,
+Brune Poirson,troisième circonscription de Vaucluse,84,557548,groupe La République en marche !
+Julien Aubert,cinquième circonscription de Vaucluse,84,557548,groupe Les Républicains
+Pascale Fontenel-Personne,troisième circonscription de la Sarthe,72,568445,groupe La République en marche !
+Marietta Karamanli,deuxième circonscription de la Sarthe,72,568445,groupe Nouvelle Gauche
+Damien Pichereau,première circonscription de la Sarthe,72,568445,groupe La République en marche !
+Jean-Carles Grelier,cinquième circonscription de la Sarthe,72,568445,groupe Les Républicains
+Stéphane Le Foll,quatrième circonscription de la Sarthe,72,568445,groupe Nouvelle Gauche
+Emmanuel Maquet,troisième circonscription de la Somme,80,571879,groupe Les Républicains
+Barbara Pompili,deuxième circonscription de la Somme,80,571879,groupe La République en marche !
+François Ruffin,première circonscription de la Somme,80,571879,groupe La France insoumise
+Jean-Claude Leclabart,quatrième circonscription de la Somme,80,571879,groupe La République en marche !
+Stéphane Demilly,cinquième circonscription de la Somme,80,571879,"groupe UDI, Agir et indépendants"
+Aina Kuric,deuxième circonscription de la Marne,51,572293,groupe La République en marche !
+Éric Girardin,troisième circonscription de la Marne,51,572293,groupe La République en marche !
+Valérie Beauvais,première circonscription de la Marne,51,572293,groupe Les Républicains
+Lise Magnier,quatrième circonscription de la Marne,51,572293,"groupe UDI, Agir et indépendants"
+Charles de Courson,cinquième circonscription de la Marne,51,572293,"groupe UDI, Agir et indépendants"
+Éric Bothorel,cinquième circonscription des Côtes-d'Armor,22,598357,groupe La République en marche !
+Hervé Berville,deuxième circonscription des Côtes-d'Armor,22,598357,groupe La République en marche !
+Marc Le Fur,troisième circonscription des Côtes-d'Armor,22,598357,groupe Les Républicains
+Yannick Kerlogot,quatrième circonscription des Côtes-d'Armor,22,598357,groupe La République en marche !
+Bruno Joncour,première circonscription des Côtes-d'Armor,22,598357,groupe Mouvement démocrate
+Claire O'Petit,cinquième circonscription de l'Eure,27,601948,groupe La République en marche !
+Fabien Gouttefarde,deuxième circonscription de l'Eure,27,601948,groupe La République en marche !
+Marie Tamarelle-Verhaeghe,troisième circonscription de l'Eure,27,601948,groupe La République en marche !
+Bruno Le Maire,première circonscription de l'Eure,27,601948,groupe La République en marche !
+Bruno Questel,quatrième circonscription de l'Eure,27,601948,groupe La République en marche !
+Philippe Chalumeau,première circonscription d'Indre-et-Loire,37,604966,groupe La République en marche !
+Sophie Auconie,troisième circonscription d'Indre-et-Loire,37,604966,"groupe UDI, Agir et indépendants"
+Sabine Thillaye,cinquième circonscription d'Indre-et-Loire,37,604966,groupe La République en marche !
+Fabienne Colboc,quatrième circonscription d'Indre-et-Loire,37,604966,groupe La République en marche !
+Daniel Labaronne,deuxième circonscription d'Indre-et-Loire,37,604966,groupe La République en marche !
+Charles de La Verpillière,deuxième circonscription de l'Ain,01,631877,groupe Les Républicains
+Stéphane Trompille,quatrième circonscription de l'Ain,01,631877,groupe La République en marche !
+Olga Givernet,troisième circonscription de l'Ain,01,631877,groupe La République en marche !
+Damien Abad,cinquième circonscription de l'Ain,01,631877,groupe Les Républicains
+Xavier Breton,première circonscription de l'Ain,01,631877,groupe Les Républicains
+Jean-Philippe Ardouin,troisième circonscription de la Charente-Maritime,17,639938,groupe La République en marche !
+Olivier Falorni,première circonscription de la Charente-Maritime,17,639938,
+Frédérique Tuffnell,deuxième circonscription de la Charente-Maritime,17,639938,groupe La République en marche !
+Didier Quentin,cinquième circonscription de la Charente-Maritime,17,639938,groupe Les Républicains
+Raphaël Gérard,quatrième circonscription de la Charente-Maritime,17,639938,groupe La République en marche !
+André Chassaigne,cinquième circonscription du Puy-de-Dôme,63,647501,groupe Gauche démocrate et républicaine
+Valérie Thomas,première circonscription du Puy-de-Dôme,63,647501,groupe La République en marche !
+Laurence Vichnievsky,troisième circonscription du Puy-de-Dôme,63,647501,groupe Mouvement démocrate
+Michel Fanget,quatrième circonscription du Puy-de-Dôme,63,647501,groupe Mouvement démocrate
+Christine Pirès-Beaune,deuxième circonscription du Puy-de-Dôme,63,647501,groupe Nouvelle Gauche
+Patricia Gallerneau,deuxième circonscription de la Vendée,85,666714,groupe Mouvement démocrate
+Pierre Henriet,cinquième circonscription de la Vendée,85,666714,groupe La République en marche !
+Philippe Latombe,première circonscription de la Vendée,85,666714,groupe Mouvement démocrate
+Martine Leguille-Balloy,quatrième circonscription de la Vendée,85,666714,groupe La République en marche !
+Stéphane Buchou,troisième circonscription de la Vendée,85,666714,groupe La République en marche !
+Jean Lassalle,quatrième circonscription des Pyrénées-Atlantiques,64,670032,
+Jean-Paul Mattei,deuxième circonscription des Pyrénées-Atlantiques,64,670032,groupe Mouvement démocrate
+David Habib,troisième circonscription des Pyrénées-Atlantiques,64,670032,groupe Nouvelle Gauche
+Florence Lasserre-David,cinquième circonscription des Pyrénées-Atlantiques,64,670032,groupe Mouvement démocrate
+Vincent Bru,sixième circonscription des Pyrénées-Atlantiques,64,670032,groupe Mouvement démocrate
+Josy Poueyto,première circonscription des Pyrénées-Atlantiques,64,670032,groupe Mouvement démocrate
+Richard Ramos,sixième circonscription du Loiret,45,673349,groupe Mouvement démocrate
+Marianne Dubois,cinquième circonscription du Loiret,45,673349,groupe Les Républicains
+Claude de Ganay,troisième circonscription du Loiret,45,673349,groupe Les Républicains
+Stéphanie Rist,première circonscription du Loiret,45,673349,groupe La République en marche !
+Caroline Janvier,deuxième circonscription du Loiret,45,673349,groupe La République en marche !
+Jean-Pierre Door,quatrième circonscription du Loiret,45,673349,groupe Les Républicains
+Alain Tourret,sixième circonscription du Calvados,14,693579,groupe La République en marche !
+Christophe Blanchet,quatrième circonscription du Calvados,14,693579,groupe La République en marche !
+Laurence Dumont,deuxième circonscription du Calvados,14,693579,groupe Nouvelle Gauche
+Bertrand Bouyx,cinquième circonscription du Calvados,14,693579,groupe La République en marche !
+Sébastien Leclerc,troisième circonscription du Calvados,14,693579,groupe Les Républicains
+Fabrice Le Vigoureux,première circonscription du Calvados,14,693579,groupe La République en marche !
+Carole Grandjean,première circonscription de Meurthe-et-Moselle,54,734403,groupe La République en marche !
+Thibault Bazin,quatrième circonscription de Meurthe-et-Moselle,54,734403,groupe Les Républicains
+Dominique Potier,cinquième circonscription de Meurthe-et-Moselle,54,734403,groupe Nouvelle Gauche
+Xavier Paluszkiewicz,troisième circonscription de Meurthe-et-Moselle,54,734403,groupe La République en marche !
+Caroline Fiat,sixième circonscription de Meurthe-et-Moselle,54,734403,groupe La France insoumise
+Laurent Garcia,deuxième circonscription de Meurthe-et-Moselle,54,734403,groupe Mouvement démocrate
+Philippe Berta,sixième circonscription du Gard,30,738189,groupe Mouvement démocrate
+Anthony Cellier,troisième circonscription du Gard,30,738189,groupe La République en marche !
+Gilbert Collard,deuxième circonscription du Gard,30,738189,
+Françoise Dumas,première circonscription du Gard,30,738189,groupe La République en marche !
+Annie Chapelier,quatrième circonscription du Gard,30,738189,groupe La République en marche !
+Olivier Gaillard,cinquième circonscription du Gard,30,738189,groupe La République en marche !
+Nicole Le Peih,troisième circonscription du Morbihan,56,744813,groupe La République en marche !
+Hervé Pellois,première circonscription du Morbihan,56,744813,groupe La République en marche !
+Paul Molac,quatrième circonscription du Morbihan,56,744813,groupe La République en marche !
+Gwendal Rouillard,cinquième circonscription du Morbihan,56,744813,groupe La République en marche !
+Jean-Michel Jacques,sixième circonscription du Morbihan,56,744813,groupe La République en marche !
+Jimmy Pahun,deuxième circonscription du Morbihan,56,744813,groupe Mouvement démocrate
+Dino Cinieri,quatrième circonscription de la Loire,42,759411,groupe Les Républicains
+Jean-Michel Mis,deuxième circonscription de la Loire,42,759411,groupe La République en marche !
+Valéria Faure-Muntian,troisième circonscription de la Loire,42,759411,groupe La République en marche !
+Julien Borowczyk,sixième circonscription de la Loire,42,759411,groupe La République en marche !
+Nathalie Sarles,cinquième circonscription de la Loire,42,759411,groupe La République en marche !
+Régis Juanico,première circonscription de la Loire,42,759411,groupe Nouvelle Gauche
+Olivier Becht,cinquième circonscription du Haut-Rhin,68,762607,"groupe UDI, Agir et indépendants"
+Jean-Luc Reitzer,troisième circonscription du Haut-Rhin,68,762607,groupe Les Républicains
+Éric Straumann,première circonscription du Haut-Rhin,68,762607,groupe Les Républicains
+Bruno Fuchs,sixième circonscription du Haut-Rhin,68,762607,groupe Mouvement démocrate
+Jacques Cattin,deuxième circonscription du Haut-Rhin,68,762607,groupe Les Républicains
+Raphaël Schellenberger,quatrième circonscription du Haut-Rhin,68,762607,groupe Les Républicains
+Frédérique Lardet,deuxième circonscription de la Haute-Savoie,74,793938,groupe La République en marche !
+Véronique Riotton,première circonscription de la Haute-Savoie,74,793938,groupe La République en marche !
+Martial Saddier,troisième circonscription de la Haute-Savoie,74,793938,groupe Les Républicains
+Virginie Duby-Muller,quatrième circonscription de la Haute-Savoie,74,793938,groupe Les Républicains
+Xavier Roseren,sixième circonscription de la Haute-Savoie,74,793938,groupe La République en marche !
+Marion Lenne,cinquième circonscription de la Haute-Savoie,74,793938,groupe La République en marche !
+Stella Dupont,deuxième circonscription de Maine-et-Loire,49,810186,groupe La République en marche !
+Philippe Bolo,septième circonscription de Maine-et-Loire,49,810186,groupe Mouvement démocrate
+Denis Masséglia,cinquième circonscription de Maine-et-Loire,49,810186,groupe La République en marche !
+Laëtitia Saint-Paul,quatrième circonscription de Maine-et-Loire,49,810186,groupe La République en marche !
+Matthieu Orphelin,première circonscription de Maine-et-Loire,49,810186,groupe La République en marche !
+Jean-Charles Taugourdeau,troisième circonscription de Maine-et-Loire,49,810186,groupe Les Républicains
+Nicole Dubre-Chirat,sixième circonscription de Maine-et-Loire,49,810186,groupe La République en marche !
+Agnès Thill,deuxième circonscription de l'Oise,60,821552,groupe La République en marche !
+Carole Bureau-Bonnard,sixième circonscription de l'Oise,60,821552,groupe La République en marche !
+Maxime Minot,septième circonscription de l'Oise,60,821552,groupe Les Républicains
+Olivier Dassault,première circonscription de l'Oise,60,821552,groupe Les Républicains
+Éric Woerth,quatrième circonscription de l'Oise,60,821552,groupe Les Républicains
+Pascal Bois,troisième circonscription de l'Oise,60,821552,groupe La République en marche !
+Pierre Vatin,cinquième circonscription de l'Oise,60,821552,groupe Les Républicains
+Nathalie Bassire,troisième circonscription de La Réunion,974,850727,groupe Les Républicains
+Thierry Robert,septième circonscription de La Réunion,974,850727,groupe Mouvement démocrate
+Nadia Ramassamy,sixième circonscription de La Réunion,974,850727,groupe Les Républicains
+Huguette Bello,deuxième circonscription de La Réunion,974,850727,groupe Gauche démocrate et républicaine
+Jean-Hugues Ratenon,cinquième circonscription de La Réunion,974,850727,groupe La France insoumise
+Ericka Bareigts,première circonscription de La Réunion,974,850727,groupe Nouvelle Gauche
+David Lorion,quatrième circonscription de La Réunion,974,850727,groupe Les Républicains
+Jean-Charles Larsonneur,deuxième circonscription du Finistère,29,907796,groupe La République en marche !
+Graziella Melchior,cinquième circonscription du Finistère,29,907796,groupe La République en marche !
+Erwan Balanant,huitième circonscription du Finistère,29,907796,groupe Mouvement démocrate
+Richard Ferrand,sixième circonscription du Finistère,29,907796,groupe La République en marche !
+Sandrine Le Feur,quatrième circonscription du Finistère,29,907796,groupe La République en marche !
+Annaïg Le Meur,première circonscription du Finistère,29,907796,groupe La République en marche !
+Didier Le Gac,troisième circonscription du Finistère,29,907796,groupe La République en marche !
+Liliane Tanguy,septième circonscription du Finistère,29,907796,groupe La République en marche !
+Thierry Benoit,sixième circonscription d'Ille-et-Vilaine,35,1042884,"groupe UDI, Agir et indépendants"
+Gilles Lurton,septième circonscription d'Ille-et-Vilaine,35,1042884,groupe Les Républicains
+Gaël Le Bohec,quatrième circonscription d'Ille-et-Vilaine,35,1042884,groupe La République en marche !
+Mustapha Laabid,première circonscription d'Ille-et-Vilaine,35,1042884,groupe La République en marche !
+Laurence Maillart-Méhaignerie,deuxième circonscription d'Ille-et-Vilaine,35,1042884,groupe La République en marche !
+Florian Bachelier,huitième circonscription d'Ille-et-Vilaine,35,1042884,groupe La République en marche !
+Christine Cloarec,cinquième circonscription d'Ille-et-Vilaine,35,1042884,groupe La République en marche !
+François André,troisième circonscription d'Ille-et-Vilaine,35,1042884,groupe La République en marche !
+Isabelle Rauch,neuvième circonscription de la Moselle,57,1044486,groupe La République en marche !
+Nicole Trisse,cinquième circonscription de la Moselle,57,1044486,groupe La République en marche !
+Christophe Arend,sixième circonscription de la Moselle,57,1044486,groupe La République en marche !
+Ludovic Mendes,deuxième circonscription de la Moselle,57,1044486,groupe La République en marche !
+Hélène Zannier,septième circonscription de la Moselle,57,1044486,groupe La République en marche !
+Fabien Di Filippo,quatrième circonscription de la Moselle,57,1044486,groupe Les Républicains
+Belkhir Belhaddad,première circonscription de la Moselle,57,1044486,groupe La République en marche !
+Brahim Hammouche,huitième circonscription de la Moselle,57,1044486,groupe Mouvement démocrate
+Richard Lioger,troisième circonscription de la Moselle,57,1044486,groupe La République en marche !
+Philippe Michel-Kleisbauer,cinquième circonscription du Var,83,1048652,groupe Mouvement démocrate
+Sereine Mauborgne,quatrième circonscription du Var,83,1048652,groupe La République en marche !
+Cécile Muschotti,deuxième circonscription du Var,83,1048652,groupe La République en marche !
+Fabien Matras,huitième circonscription du Var,83,1048652,groupe La République en marche !
+Jean-Louis Masson,troisième circonscription du Var,83,1048652,groupe Les Républicains
+Valérie Gomez-Bassac,sixième circonscription du Var,83,1048652,groupe La République en marche !
+Émilie Guerel,septième circonscription du Var,83,1048652,groupe La République en marche !
+Geneviève Levy,première circonscription du Var,83,1048652,groupe Les Républicains
+Alexandra Valetta-Ardisson,quatrième circonscription des Alpes-Maritimes,06,1082440,groupe La République en marche !
+Marine Brenier,cinquième circonscription des Alpes-Maritimes,06,1082440,groupe Les Républicains
+Bernard Brochand,huitième circonscription des Alpes-Maritimes,06,1082440,groupe Les Républicains
+Cédric Roussel,troisième circonscription des Alpes-Maritimes,06,1082440,groupe La République en marche !
+Laurence Trastour-Isnart,sixième circonscription des Alpes-Maritimes,06,1082440,groupe Les Républicains
+Éric Pauget,septième circonscription des Alpes-Maritimes,06,1082440,groupe Les Républicains
+Loïc Dombreval,deuxième circonscription des Alpes-Maritimes,06,1082440,groupe La République en marche !
+Éric Ciotti,première circonscription des Alpes-Maritimes,06,1082440,groupe Les Républicains
+Michèle Tabarot,neuvième circonscription des Alpes-Maritimes,06,1082440,groupe Les Républicains
+Thierry Michels,première circonscription du Bas-Rhin,67,1116658,groupe La République en marche !
+Patrick Hetzel,septième circonscription du Bas-Rhin,67,1116658,groupe Les Républicains
+Martine Wonner,quatrième circonscription du Bas-Rhin,67,1116658,groupe La République en marche !
+Bruno Studer,troisième circonscription du Bas-Rhin,67,1116658,groupe La République en marche !
+Vincent Thiébaut,neuvième circonscription du Bas-Rhin,67,1116658,groupe La République en marche !
+Laurent Furst,sixième circonscription du Bas-Rhin,67,1116658,groupe Les Républicains
+Frédéric Reiss,huitième circonscription du Bas-Rhin,67,1116658,groupe Les Républicains
+Sylvain Waserman,deuxième circonscription du Bas-Rhin,67,1116658,groupe Mouvement démocrate
+Antoine Herth,cinquième circonscription du Bas-Rhin,67,1116658,"groupe UDI, Agir et indépendants"
+Patricia Mirallès,première circonscription de l'Hérault,34,1120190,groupe La République en marche !
+Coralie Dubost,troisième circonscription de l'Hérault,34,1120190,groupe La République en marche !
+Muriel Ressiguier,deuxième circonscription de l'Hérault,34,1120190,groupe La France insoumise
+Christophe Euzet,septième circonscription de l'Hérault,34,1120190,groupe La République en marche !
+Emmanuelle Ménard,sixième circonscription de l'Hérault,34,1120190,
+Patrick Vignal,neuvième circonscription de l'Hérault,34,1120190,groupe La République en marche !
+Nicolas Démoulin,huitième circonscription de l'Hérault,34,1120190,groupe La République en marche !
+Jean-François Eliaou,quatrième circonscription de l'Hérault,34,1120190,groupe La République en marche !
+Philippe Huppé,cinquième circonscription de l'Hérault,34,1120190,groupe La République en marche !
+Aurélien Taché,dixième circonscription du Val-d'Oise,95,1215390,groupe La République en marche !
+Fiona Lazaar,cinquième circonscription du Val-d'Oise,95,1215390,groupe La République en marche !
+Cécile Rilhac,troisième circonscription du Val-d'Oise,95,1215390,groupe La République en marche !
+Naïma Moutchou,quatrième circonscription du Val-d'Oise,95,1215390,groupe La République en marche !
+Zivka Park,neuvième circonscription du Val-d'Oise,95,1215390,groupe La République en marche !
+François Pupponi,huitième circonscription du Val-d'Oise,95,1215390,groupe Nouvelle Gauche
+Guillaume Vuilletet,deuxième circonscription du Val-d'Oise,95,1215390,groupe La République en marche !
+Nathalie Elimas,sixième circonscription du Val-d'Oise,95,1215390,groupe Mouvement démocrate
+Isabelle Muller-Quoy,première circonscription du Val-d'Oise,95,1215390,groupe La République en marche !
+Dominique Da Silva,septième circonscription du Val-d'Oise,95,1215390,groupe La République en marche !
+Élodie Jacquier-Laforge,neuvième circonscription de l'Isère,38,1251060,groupe Mouvement démocrate
+Jean-Charles Colas-Roy,deuxième circonscription de l'Isère,38,1251060,groupe La République en marche !
+Monique Limon,septième circonscription de l'Isère,38,1251060,groupe La République en marche !
+Émilie Chalas,troisième circonscription de l'Isère,38,1251060,groupe La République en marche !
+Cendra Motin,sixième circonscription de l'Isère,38,1251060,groupe La République en marche !
+Marie-Noëlle Battistel,quatrième circonscription de l'Isère,38,1251060,groupe Nouvelle Gauche
+Catherine Kamowski,cinquième circonscription de l'Isère,38,1251060,groupe La République en marche !
+Olivier Véran,première circonscription de l'Isère,38,1251060,groupe La République en marche !
+Caroline Abadie,huitième circonscription de l'Isère,38,1251060,groupe La République en marche !
+Marjolaine Meynier-Millefert,dixième circonscription de l'Isère,38,1251060,groupe La République en marche !
+Damien Adam,première circonscription de la Seine-Maritime,76,1257699,groupe La République en marche !
+Stéphanie Kerbarh,neuvième circonscription de la Seine-Maritime,76,1257699,groupe La République en marche !
+Sira Sylla,quatrième circonscription de la Seine-Maritime,76,1257699,groupe La République en marche !
+Christophe Bouillon,cinquième circonscription de la Seine-Maritime,76,1257699,groupe Nouvelle Gauche
+Agnès Firmin-Le Bodo,septième circonscription de la Seine-Maritime,76,1257699,"groupe UDI, Agir et indépendants"
+Xavier Batut,dixième circonscription de la Seine-Maritime,76,1257699,groupe La République en marche !
+Jean-Paul Lecoq,huitième circonscription de la Seine-Maritime,76,1257699,groupe Gauche démocrate et républicaine
+Sébastien Jumel,sixième circonscription de la Seine-Maritime,76,1257699,groupe Gauche démocrate et républicaine
+Annie Vidal,deuxième circonscription de la Seine-Maritime,76,1257699,groupe La République en marche !
+Hubert Wulfranc,troisième circonscription de la Seine-Maritime,76,1257699,groupe Gauche démocrate et républicaine
+Pierre-Alain Raphan,dixième circonscription de l'Essonne,91,1276233,groupe La République en marche !
+Marie Guévenoux,neuvième circonscription de l'Essonne,91,1276233,groupe La République en marche !
+Robin Reda,septième circonscription de l'Essonne,91,1276233,groupe Les Républicains
+Amélie de Montchalin,sixième circonscription de l'Essonne,91,1276233,groupe La République en marche !
+Manuel Valls,première circonscription de l'Essonne,91,1276233,groupe La République en marche !
+Nicolas Dupont-Aignan,huitième circonscription de l'Essonne,91,1276233,
+Franck Marlin,deuxième circonscription de l'Essonne,91,1276233,groupe Les Républicains
+Marie-Pierre Rixain,quatrième circonscription de l'Essonne,91,1276233,groupe La République en marche !
+Cédric Villani,cinquième circonscription de l'Essonne,91,1276233,groupe La République en marche !
+Laëtitia Romeiro Dias,troisième circonscription de l'Essonne,91,1276233,groupe La République en marche !
+Corinne Vignon,troisième circonscription de la Haute-Garonne,31,1335103,groupe La République en marche !
+Joël Aviragnet,huitième circonscription de la Haute-Garonne,31,1335103,groupe Nouvelle Gauche
+Jean-Luc Lagleize,deuxième circonscription de la Haute-Garonne,31,1335103,groupe Mouvement démocrate
+Jean-François Portarrieu,cinquième circonscription de la Haute-Garonne,31,1335103,groupe La République en marche !
+Mickaël Nogal,quatrième circonscription de la Haute-Garonne,31,1335103,groupe La République en marche !
+Monique Iborra,sixième circonscription de la Haute-Garonne,31,1335103,groupe La République en marche !
+Sandrine Mörch,neuvième circonscription de la Haute-Garonne,31,1335103,groupe La République en marche !
+Pierre Cabaré,première circonscription de la Haute-Garonne,31,1335103,groupe La République en marche !
+Sébastien Nadot,dixième circonscription de la Haute-Garonne,31,1335103,groupe La République en marche !
+Élisabeth Toutut-Picard,septième circonscription de la Haute-Garonne,31,1335103,groupe La République en marche !
+Yves Daniel,sixième circonscription de la Loire-Atlantique,44,1365227,groupe La République en marche !
+Audrey Dufeu-Schubert,huitième circonscription de la Loire-Atlantique,44,1365227,groupe La République en marche !
+Sarah El Haïry,cinquième circonscription de la Loire-Atlantique,44,1365227,groupe Mouvement démocrate
+Yannick Haury,neuvième circonscription de la Loire-Atlantique,44,1365227,groupe La République en marche !
+Aude Amadou,quatrième circonscription de la Loire-Atlantique,44,1365227,groupe La République en marche !
+Sandrine Josso,septième circonscription de la Loire-Atlantique,44,1365227,groupe La République en marche !
+Anne-France Brunet,troisième circonscription de la Loire-Atlantique,44,1365227,groupe La République en marche !
+François de Rugy,première circonscription de la Loire-Atlantique,44,1365227,groupe La République en marche !
+Valérie Oppelt,deuxième circonscription de la Loire-Atlantique,44,1365227,groupe La République en marche !
+Sophie Errante,dixième circonscription de la Loire-Atlantique,44,1365227,groupe La République en marche !
+Mathilde Panot,dixième circonscription du Val-de-Marne,94,1372389,groupe La France insoumise
+Gilles Carrez,cinquième circonscription du Val-de-Marne,94,1372389,groupe Les Républicains
+Laurent Saint-Martin,troisième circonscription du Val-de-Marne,94,1372389,groupe La République en marche !
+Maud Petit,quatrième circonscription du Val-de-Marne,94,1372389,groupe Mouvement démocrate
+Michel Herbillon,huitième circonscription du Val-de-Marne,94,1372389,groupe Les Républicains
+Guillaume Gouffier-Cha,sixième circonscription du Val-de-Marne,94,1372389,groupe La République en marche !
+Frédéric Descrozaille,première circonscription du Val-de-Marne,94,1372389,groupe La République en marche !
+Luc Carvounas,neuvième circonscription du Val-de-Marne,94,1372389,groupe Nouvelle Gauche
+Jean-Jacques Bridey,septième circonscription du Val-de-Marne,94,1372389,groupe La République en marche !
+Jean-François Mbaye,deuxième circonscription du Val-de-Marne,94,1372389,groupe La République en marche !
+Albane Gaillot,onzième circonscription du Val-de-Marne,94,1372389,groupe La République en marche !
+Rodrigue Kokouendo,septième circonscription de Seine-et-Marne,77,1390121,groupe La République en marche !
+Christian Jacob,quatrième circonscription de Seine-et-Marne,77,1390121,groupe Les Républicains
+Stéphanie Do,dixième circonscription de Seine-et-Marne,77,1390121,groupe La République en marche !
+Valérie Lacroute,deuxième circonscription de Seine-et-Marne,77,1390121,groupe Les Républicains
+Michèle Peyron,neuvième circonscription de Seine-et-Marne,77,1390121,groupe La République en marche !
+Franck Riester,cinquième circonscription de Seine-et-Marne,77,1390121,"groupe UDI, Agir et indépendants"
+Jean-François Parigi,sixième circonscription de Seine-et-Marne,77,1390121,groupe Les Républicains
+Yves Jégo,troisième circonscription de Seine-et-Marne,77,1390121,"groupe UDI, Agir et indépendants"
+Jean-Michel Fauvergue,huitième circonscription de Seine-et-Marne,77,1390121,groupe La République en marche !
+Olivier Faure,onzième circonscription de Seine-et-Marne,77,1390121,groupe Nouvelle Gauche
+Aude Luquet,première circonscription de Seine-et-Marne,77,1390121,groupe Mouvement démocrate
+Jean-Noël Barrot,deuxième circonscription des Yvelines,78,1427291,groupe Mouvement démocrate
+Didier Baichère,première circonscription des Yvelines,78,1427291,groupe La République en marche !
+Florence Granjus,douzième circonscription des Yvelines,78,1427291,groupe La République en marche !
+Yaël Braun-Pivet,cinquième circonscription des Yvelines,78,1427291,groupe La République en marche !
+Michèle de Vaucouleurs,septième circonscription des Yvelines,78,1427291,groupe Mouvement démocrate
+Nadia Hai,onzième circonscription des Yvelines,78,1427291,groupe La République en marche !
+Béatrice Piron,troisième circonscription des Yvelines,78,1427291,groupe La République en marche !
+Aurore Bergé,dixième circonscription des Yvelines,78,1427291,groupe La République en marche !
+Bruno Millienne,neuvième circonscription des Yvelines,78,1427291,groupe Mouvement démocrate
+Michel Vialay,huitième circonscription des Yvelines,78,1427291,groupe Les Républicains
+Marie Lebec,quatrième circonscription des Yvelines,78,1427291,groupe La République en marche !
+Natalia Pouzyreff,sixième circonscription des Yvelines,78,1427291,groupe La République en marche !
+Pierre-Henri Dumont,septième circonscription du Pas-de-Calais,62,1472648,groupe Les Républicains
+Jean-Pierre Pont,cinquième circonscription du Pas-de-Calais,62,1472648,groupe La République en marche !
+Benoît Potterie,huitième circonscription du Pas-de-Calais,62,1472648,groupe La République en marche !
+José Évrard,troisième circonscription du Pas-de-Calais,62,1472648,
+Bruno Bilde,douzième circonscription du Pas-de-Calais,62,1472648,
+Ludovic Pajot,dixième circonscription du Pas-de-Calais,62,1472648,
+Daniel Fasquelle,quatrième circonscription du Pas-de-Calais,62,1472648,groupe Les Républicains
+Marine Le Pen,onzième circonscription du Pas-de-Calais,62,1472648,
+Bruno Duvergé,première circonscription du Pas-de-Calais,62,1472648,groupe Mouvement démocrate
+Jacqueline Maquet,deuxième circonscription du Pas-de-Calais,62,1472648,groupe La République en marche !
+Marguerite Deprez-Audebert,neuvième circonscription du Pas-de-Calais,62,1472648,groupe Mouvement démocrate
+Brigitte Bourguignon,sixième circonscription du Pas-de-Calais,62,1472648,groupe La République en marche !
+Éric Poulliat,sixième circonscription de la Gironde,33,1548478,groupe La République en marche !
+Sophie Panonacle,huitième circonscription de la Gironde,33,1548478,groupe La République en marche !
+Florent Boudié,dixième circonscription de la Gironde,33,1548478,groupe La République en marche !
+Alain David,quatrième circonscription de la Gironde,33,1548478,groupe Nouvelle Gauche
+Loïc Prud'homme,troisième circonscription de la Gironde,33,1548478,groupe La France insoumise
+Christelle Dubos,douzième circonscription de la Gironde,33,1548478,groupe La République en marche !
+Véronique Hammerer,onzième circonscription de la Gironde,33,1548478,groupe La République en marche !
+Bérangère Couillard,septième circonscription de la Gironde,33,1548478,groupe La République en marche !
+Catherine Fabre,deuxième circonscription de la Gironde,33,1548478,groupe La République en marche !
+Benoit Simian,cinquième circonscription de la Gironde,33,1548478,groupe La République en marche !
+Sophie Mette,neuvième circonscription de la Gironde,33,1548478,groupe Mouvement démocrate
+Dominique David,première circonscription de la Gironde,33,1548478,groupe La République en marche !
+Éric Coquerel,première circonscription de la Seine-Saint-Denis,93,1592663,groupe La France insoumise
+Patrice Anato,troisième circonscription de la Seine-Saint-Denis,93,1592663,groupe La République en marche !
+Sabine Rubin,neuvième circonscription de la Seine-Saint-Denis,93,1592663,groupe La France insoumise
+Marie-George Buffet,quatrième circonscription de la Seine-Saint-Denis,93,1592663,groupe Gauche démocrate et républicaine
+Sylvie Charrière,huitième circonscription de la Seine-Saint-Denis,93,1592663,groupe La République en marche !
+Jean-Christophe Lagarde,cinquième circonscription de la Seine-Saint-Denis,93,1592663,"groupe UDI, Agir et indépendants"
+Clémentine Autain,onzième circonscription de la Seine-Saint-Denis,93,1592663,groupe La France insoumise
+Bastien Lachaud,sixième circonscription de la Seine-Saint-Denis,93,1592663,groupe La France insoumise
+Alain Ramadier,dixième circonscription de la Seine-Saint-Denis,93,1592663,groupe Les Républicains
+Alexis Corbière,septième circonscription de la Seine-Saint-Denis,93,1592663,groupe La France insoumise
+Stéphane Peu,deuxième circonscription de la Seine-Saint-Denis,93,1592663,groupe Gauche démocrate et républicaine
+Stéphane Testé,douzième circonscription de la Seine-Saint-Denis,93,1592663,groupe La République en marche !
+Gabriel Attal,dixième circonscription des Hauts-de-Seine,92,1601569,groupe La République en marche !
+Céline Calvez,cinquième circonscription des Hauts-de-Seine,92,1601569,groupe La République en marche !
+Elsa Faucillon,première circonscription des Hauts-de-Seine,92,1601569,groupe Gauche démocrate et républicaine
+Frédérique Dumas,treizième circonscription des Hauts-de-Seine,92,1601569,groupe La République en marche !
+Jean-Louis Bourlanges,douzième circonscription des Hauts-de-Seine,92,1601569,groupe Mouvement démocrate
+Laurianne Rossi,onzième circonscription des Hauts-de-Seine,92,1601569,groupe La République en marche !
+Constance Le Grip,sixième circonscription des Hauts-de-Seine,92,1601569,groupe Les Républicains
+Christine Hennion,troisième circonscription des Hauts-de-Seine,92,1601569,groupe La République en marche !
+Jacques Maire,huitième circonscription des Hauts-de-Seine,92,1601569,groupe La République en marche !
+Thierry Solère,neuvième circonscription des Hauts-de-Seine,92,1601569,groupe La République en marche !
+Adrien Taquet,deuxième circonscription des Hauts-de-Seine,92,1601569,groupe La République en marche !
+Jacques Marilossian,septième circonscription des Hauts-de-Seine,92,1601569,groupe La République en marche !
+Isabelle Florennes,quatrième circonscription des Hauts-de-Seine,92,1601569,groupe Mouvement démocrate
+Danièle Cazarian,treizième circonscription du Rhône,69,1821995,groupe La République en marche !
+Thomas Rudigoz,première circonscription du Rhône,69,1821995,groupe La République en marche !
+Jean-Louis Touraine,troisième circonscription du Rhône,69,1821995,groupe La République en marche !
+Hubert Julien-Laferrière,deuxième circonscription du Rhône,69,1821995,groupe La République en marche !
+Bernard Perrut,neuvième circonscription du Rhône,69,1821995,groupe Les Républicains
+Anne Brugnera,quatrième circonscription du Rhône,69,1821995,groupe La République en marche !
+Anissa Khedher,septième circonscription du Rhône,69,1821995,groupe La République en marche !
+Yves Blein,quatorzième circonscription du Rhône,69,1821995,groupe La République en marche !
+Patrice Verchère,huitième circonscription du Rhône,69,1821995,groupe Les Républicains
+Cyrille Isaac-Sibille,douzième circonscription du Rhône,69,1821995,groupe Mouvement démocrate
+Bruno Bonnell,sixième circonscription du Rhône,69,1821995,groupe La République en marche !
+Thomas Gassilloud,dixième circonscription du Rhône,69,1821995,groupe La République en marche !
+Blandine Brocard,cinquième circonscription du Rhône,69,1821995,groupe La République en marche !
+Jean-Luc Fugit,onzième circonscription du Rhône,69,1821995,groupe La République en marche !
+Saïd Ahamada,septième circonscription des Bouches-du-Rhône,13,2016622,groupe La République en marche !
+Pierre Dharréville,treizième circonscription des Bouches-du-Rhône,13,2016622,groupe Gauche démocrate et républicaine
+Valérie Boyer,première circonscription des Bouches-du-Rhône,13,2016622,groupe Les Républicains
+Anne-Laurence Petel,quatorzième circonscription des Bouches-du-Rhône,13,2016622,groupe La République en marche !
+Claire Pitollat,deuxième circonscription des Bouches-du-Rhône,13,2016622,groupe La République en marche !
+Bernard Deflesselles,neuvième circonscription des Bouches-du-Rhône,13,2016622,groupe Les Républicains
+Monica Michel,seizième circonscription des Bouches-du-Rhône,13,2016622,groupe La République en marche !
+Mohamed Laqhila,onzième circonscription des Bouches-du-Rhône,13,2016622,groupe Mouvement démocrate
+Guy Teissier,sixième circonscription des Bouches-du-Rhône,13,2016622,groupe Les Républicains
+Jean-Marc Zulesi,huitième circonscription des Bouches-du-Rhône,13,2016622,groupe La République en marche !
+Éric Diard,douzième circonscription des Bouches-du-Rhône,13,2016622,groupe Les Républicains
+Alexandra Louis,troisième circonscription des Bouches-du-Rhône,13,2016622,groupe La République en marche !
+Jean-Luc Mélenchon,quatrième circonscription des Bouches-du-Rhône,13,2016622,groupe La France insoumise
+Cathy Racon-Bouzon,cinquième circonscription des Bouches-du-Rhône,13,2016622,groupe La République en marche !
+François-Michel Lambert,dixième circonscription des Bouches-du-Rhône,13,2016622,groupe La République en marche !
+Bernard Reynès,quinzième circonscription des Bouches-du-Rhône,13,2016622,groupe Les Républicains
+Mounir Mahjoubi,seizième circonscription de Paris,75,2206488,groupe La République en marche !
+George Pau-Langevin,quinzième circonscription de Paris,75,2206488,groupe Nouvelle Gauche
+Hugues Renson,treizième circonscription de Paris,75,2206488,groupe La République en marche !
+Claude Goasguen,quatorzième circonscription de Paris,75,2206488,groupe Les Républicains
+Benjamin Griveaux,cinquième circonscription de Paris,75,2206488,groupe La République en marche !
+Pierre Person,sixième circonscription de Paris,75,2206488,groupe La République en marche !
+Pacôme Rupin,septième circonscription de Paris,75,2206488,groupe La République en marche !
+Pierre-Yves Bournazel,dix-huitième circonscription de Paris,75,2206488,"groupe UDI, Agir et indépendants"
+Brigitte Kuster,quatrième circonscription de Paris,75,2206488,groupe Les Républicains
+Buon Tan,neuvième circonscription de Paris,75,2206488,groupe La République en marche !
+Anne-Christine Lang,dixième circonscription de Paris,75,2206488,groupe La République en marche !
+Danièle Obono,dix-septième circonscription de Paris,75,2206488,groupe La France insoumise
+Sylvain Maillard,première circonscription de Paris,75,2206488,groupe La République en marche !
+Lætitia Avia,huitième circonscription de Paris,75,2206488,groupe La République en marche !
+Marielle de Sarnez,onzième circonscription de Paris,75,2206488,groupe Mouvement démocrate
+Gilles Le Gendre,deuxième circonscription de Paris,75,2206488,groupe La République en marche !
+Stanislas Guerini,troisième circonscription de Paris,75,2206488,groupe La République en marche !
+Olivia Grégoire,douzième circonscription de Paris,75,2206488,groupe La République en marche !
+Dimitri Houbron,dix-septième circonscription du Nord,59,2605238,groupe La République en marche !
+Anne-Laure Cattelot,douzième circonscription du Nord,59,2605238,groupe La République en marche !
+Paul Christophe,quatorzième circonscription du Nord,59,2605238,"groupe UDI, Agir et indépendants"
+Béatrice Descamps,vingt et unième circonscription du Nord,59,2605238,"groupe UDI, Agir et indépendants"
+Francis Vercamer,septième circonscription du Nord,59,2605238,"groupe UDI, Agir et indépendants"
+Sébastien Huyghe,cinquième circonscription du Nord,59,2605238,groupe Les Républicains
+Laurent Pietraszewski,onzième circonscription du Nord,59,2605238,groupe La République en marche !
+Adrien Quatennens,première circonscription du Nord,59,2605238,groupe La France insoumise
+Sébastien Chenu,dix-neuvième circonscription du Nord,59,2605238,
+Charlotte Lecocq,sixième circonscription du Nord,59,2605238,groupe La République en marche !
+Guy Bricout,dix-huitième circonscription du Nord,59,2605238,"groupe UDI, Agir et indépendants"
+Vincent Ledoux,dixième circonscription du Nord,59,2605238,"groupe UDI, Agir et indépendants"
+Catherine Osson,huitième circonscription du Nord,59,2605238,groupe La République en marche !
+Valérie Petit,neuvième circonscription du Nord,59,2605238,groupe La République en marche !
+Alain Bruneel,seizième circonscription du Nord,59,2605238,groupe Gauche démocrate et républicaine
+Christophe Di Pompeo,troisième circonscription du Nord,59,2605238,groupe La République en marche !
+Jennifer de Temmerman,quinzième circonscription du Nord,59,2605238,groupe La République en marche !
+Brigitte Liso,quatrième circonscription du Nord,59,2605238,groupe La République en marche !
+Ugo Bernalicis,deuxième circonscription du Nord,59,2605238,groupe La France insoumise
+Christian Hutin,treizième circonscription du Nord,59,2605238,groupe Nouvelle Gauche
+Fabien Roussel,vingtième circonscription du Nord,59,2605238,groupe Gauche démocrate et républicaine
+Amal-Amélia Lakrafi,dixième circonscription des Français établis hors de France,,,groupe La République en marche !
+Meyer Habib,huitième circonscription des Français établis hors de France,,,"groupe UDI, Agir et indépendants"
+Samantha Cazebonne,cinquième circonscription des Français établis hors de France,,,groupe La République en marche !
+Pieyre-Alexandre Anglade,quatrième circonscription des Français établis hors de France,,,groupe La République en marche !
+Alexandre Holroyd,troisième circonscription des Français établis hors de France,,,groupe La République en marche !
+Paula Forteza,deuxième circonscription des Français établis hors de France,,,groupe La République en marche !
+Anne Genetet,onzième circonscription des Français établis hors de France,,,groupe La République en marche !
+Roland Lescure,première circonscription des Français établis hors de France,,,groupe La République en marche !
+Frédéric Petit,septième circonscription des Français établis hors de France,,,groupe Mouvement démocrate
+M'jid El Guerrab,neuvième circonscription des Français établis hors de France,,,
+Joachim Son-Forget,sixième circonscription des Français établis hors de France,,,groupe La République en marche !
