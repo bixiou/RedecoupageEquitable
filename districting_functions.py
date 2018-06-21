@@ -9,50 +9,75 @@ from haversine import haversine
 import math
 import importlib
 
-
-def load_data(base, path):
+def load_data(base, path, merge_by_commune=False):
     if base=='canton': base='cantons'
     if base=='IRIS': base='iris'
-    if path is None and base=='iris': path = path_iris
+    elif path is None and base=='iris': path = path_iris
     elif path is None and base=='cantons': path = path_cantons
     data = gpd.read_file(path)
-    if base=='iris':
+    if base=='iris' or base=='iris_merged':
         data['pop'] = data['p18']
         data['atom'] = data['CODE_IRIS']
     data = data[['pop', 'atom', 'geometry']]
     data.loc[:, 'centroid_lng'] = data["geometry"].centroid.apply(lambda x: x.x)
     data.loc[:, 'centroid_lat'] = data["geometry"].centroid.apply(lambda x: x.y)
+    if merge_by_commune:
+        if base=='canton': print('Merge by commune impossible with cantons')
+        else:
+            iris_copy = data.copy()
+            data = [None for i in range(96)]
+            iris_copy['lieu'] = [str(code)[0:5] for code in iris_copy['atom']]
+            grande_commune = [i > 3500 for i in list(iris_copy.groupby('lieu').sum().loc[iris_copy['lieu']]['pop'])]
+            iris_copy['lieu'].iloc[np.where(grande_commune)] = iris_copy['atom'].iloc[np.where(grande_commune)]
+            for i in range(1, 96):
+                if i!=20:
+                    try: 
+                        iris_i = iris_copy[iris_copy["atom"].str.startswith((i<10)*'0'+str(i))].copy()
+                        iris_i = iris_i.dissolve("lieu", aggfunc="sum")
+                        iris_i['atom'] = iris_i.index
+                        iris_i.crs = iris_copy.crs
+                        iris_i.loc[:, 'centroid_lng'] = iris_i["geometry"].centroid.apply(lambda x: x.x)
+                        iris_i.loc[:, 'centroid_lat'] = iris_i["geometry"].centroid.apply(lambda x: x.y)
+                        data[i] = iris_i
+                    except: print('Departement', i, 'has a problem') # 1, 30, 37, 69, 79
     return(data)
 
 
-def districting(data, nb_districts, save_path, stop_criteria=1.5, weight_step_scale=20, it_max=100000, clean=False):
-    points = []
+def districting(data, nb_districts, save_path, stop_criteria=1.5, weight_step_scale=20, it_max=100000, clean=False, path_nb_cantons=None):
+    if type(data)==list: # by departement
+        nb_cantons = pd.read_csv(path_nb_cantons)
+        for i in range(1, 96):
+            if i not in [1,20,30,37,69,75,79]:
+                nb_cantons_i = int(list(nb_cantons[nb_cantons.departement==(i<10)*'0'+str(i)]['nb_cantons'])[0])
+                districting(data[i], nb_cantons_i, save_path+'_en_cantons_in_'+str(i), stop_criteria, weight_step_scale, it_max, clean)
+    else: 
+        points = []
 
-    for idx, row in data.iterrows():
-        points.append({"coords": np.array([float(row['centroid_lng']), float(row['centroid_lat'])]), \
-                       "w": int(row['pop']), "atom": row['atom']})    
+        for idx, row in data.iterrows():
+            points.append({"coords": np.array([float(row['centroid_lng']), float(row['centroid_lat'])]), \
+                           "w": int(row['pop']), "atom": row['atom']})    
 
-    centers = randomize_initial_cluster(points, nb_districts)
+        centers = randomize_initial_cluster(points, nb_districts)
 
-    points, centers, it_num = kmeans_evolution_weighted(points, centers, nb_districts, it_max=it_max, stop_criteria=stop_criteria, weight_step_scale=weight_step_scale)
+        points, centers, it_num = kmeans_evolution_weighted(points, centers, nb_districts, it_max=it_max, stop_criteria=stop_criteria, weight_step_scale=weight_step_scale)
 
-    points_df = pd.DataFrame.from_dict(points)
-    # points_df["CODE_IRIS"] = points_df["ref"]
-    # points_df["coords"] = "aaa"
-    # points_df.head()
+        points_df = pd.DataFrame.from_dict(points)
+        # points_df["CODE_IRIS"] = points_df["ref"]
+        # points_df["coords"] = "aaa"
+        # points_df.head()
 
-    result = data.merge(points_df, how='inner', on=['atom', 'atom'])
-    # result.head()
-    result = result[['atom','geometry','c', 'pop']]
+        result = data.merge(points_df, how='inner', on=['atom', 'atom'])
+        # result.head()
+        result = result[['atom','geometry','c', 'pop']]
 
-    # clean the data
-    valid = result['geometry'].is_valid
-    print('invalid atoms:', np.where([not v for v in valid])[0])
-    if clean: result = result.iloc[np.where(valid)[0]]
-    
-    if save_path is not None: result.to_file(save_path)
-    
-    return(result)
+        # clean the data
+        valid = result['geometry'].is_valid
+        print('invalid atoms:', np.where([not v for v in valid])[0])
+        if clean: result = result.iloc[np.where(valid)[0]]
+
+        if save_path is not None: result.to_file(save_path)
+
+        return(result)
     
 
 def show_kmeans(points, centers=None):
@@ -255,7 +280,7 @@ def kmeans_evolution_weighted(points, centers, k, distance_method=distance_try, 
         min_pop = min(pops)
         
         # if it_num % 100 == 0: 
-        print(max_pop/min_pop)
+        if it_num%100==0 or max_pop/min_pop<1.3*stop_criteria: print(max_pop/min_pop)
 
         if min_pop != 0:
             #print(max_pop, min_pop)

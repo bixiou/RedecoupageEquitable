@@ -109,7 +109,7 @@ pop <- read_excel("pop_communes_2014.xls")
 pop <- pop[-c(1:5),]
 names(pop) <- c("insee", "pop", "pop15")
 pop$pop15 <- as.numeric(pop$pop) - as.numeric(pop$pop15)
-# Je rajoute à la main les populations des arrondissements de Lyon à partir de l'excel définissant pop (elles sont dans une autre feuille du document):
+# Je rajoute à la main les populations des arrondissements de Lyon à partir de l'excel définissant pop (507k pers., elles sont dans une autre feuille du document):
 pop[nrow(pop)+1,] <- c("69381", 29539,29539-4259)
 pop[nrow(pop)+1,] <- c("69382", 29999, 29999-3882)
 pop[nrow(pop)+1,] <- c("69383", 99819,99819-15869)
@@ -586,6 +586,11 @@ parlementaires_par_departement <- function(nb_senateurs=244, nb_deputes=335) {
   return(departements)
 }
 parl_par_departement <- parlementaires_par_departement()
+parl_par_departement$pop_par_circo <- parl_par_departement$population / parl_par_departement$nb_dep
+sd(parl_par_departement$pop_par_circo) # max: 287k Orne / min: 76k Lozère / écart-type: 47k
+# 26 (-1), 29 (-1), 31 (-1), 34 (-1), 50 (-1), 67 (-1), 95 (+6)
+View(parl_par_departement[,c('pop_par_circo', 'departement', 'nb_dep', "circonscriptionNom")])
+sum(parl_par_departement$nb_dep[!is.na(as.numeric(as.vector(parl_par_departement$departement))) & (as.numeric(as.vector(parl_par_departement$departement))<100)])
 
 for (grp in groupes) { print(paste('Pourcentage de députés', grp, 'actuels:', round(sum(deputes[,grp])/5.66,2), 'vs.', 
               round(sum(parl_par_departement[paste('prop_',grp,sep='')]*parl_par_departement$population/(1.06*mean(parl_par_departement$population))),2), 
@@ -596,7 +601,7 @@ for (grp in groupes) { print(paste('Pourcentage de députés', grp, 'actuels:', 
 
 parl_par_departement$prop_gauche <- parl_par_departement$prop_GDR + parl_par_departement$prop_LFI + parl_par_departement$prop_NG
 parl_par_departement$prop_centre <- parl_par_departement$prop_EM + parl_par_departement$prop_UDI + parl_par_departement$prop_Modem
-View(parl_par_departement[,c('departement', 'population', 'nb_dep', 'nb_sen', 'prop_gauche', 'prop_centre', 'prop_EM', 'prop_LR', 'circonscriptionNom')])
+View(parl_par_departement[,c('departement', 'population', 'pop_par_circo', 'nb_dep', 'nb_sen', 'prop_gauche', 'prop_centre', 'prop_EM', 'prop_LR', 'circonscriptionNom')])
 # Écart max entre le nombre d'habitants par sénateur (resp. par député) de Lozère et des Landes (resp. de l'Orne): 
 403234/76309 # 5.28 Sénat (actuellement, c'est de 4 entre la Seine-Saint-Denis et la Creuse, cf. https://fr.wikipedia.org/wiki/Nombre_de_parlementaires_sous_la_Cinqui%C3%A8me_R%C3%A9publique_fran%C3%A7aise#Nombre_de_d%C3%A9put%C3%A9s_et_de_s%C3%A9nateurs_par_d%C3%A9partement_ou_territoire)
 286618/76309 # 3.76 Assemblée
@@ -664,6 +669,13 @@ abline(v = 30000)
 abline(v = seq(0,100000,by=10000), lty=3, col="grey")
 abline(h = seq(0,120,by=10), lty=3, col="grey")
 legend(x="topleft", legend = c("Actuel", "Proposé"), col=c("black", "red"), lwd=1)
+
+sous100k <- seq(0,95000,by=1)
+sous500k <- seq(0,500000,by=1)
+plot(sous100k, grand_electeur(sous100k)/sous100k, type='l', xlim=c(0,1000), ylim=c(0,0.05), main="Nombre de grands électeurs par habitant\n en fonction de la taille de la commune", xlab="Population de la commune", ylab="Nombre de grands électeurs par habitant")
+plot(sous100k, grand_electeur(sous100k)/sous100k, type='l', ylim=c(0,0.005), main="Nombre de grands électeurs par habitant\n en fonction de la taille de la commune", xlab="Population de la commune", ylab="Nombre de grands électeurs par habitant")
+lines(sous500k, floor(1+sous500k/800)/sous500k, type='l', col='red')
+legend(x="topright", legend = c("Actuel", "Proposé"), col=c("black", "red"), lwd=1)
 
 ##### 6 circos de l'étranger #####
 etranger <- read.dbf('Monde/resultat moins naif.dbf')
