@@ -469,14 +469,18 @@ save.image("env.RData")
 
 
 ##### Préparation IRIS Guy Lifshitz #####
-iris1_2 <- read.dbf("IRIS_Guy_final/decoupage1-2 original.dbf")
-iris1_2 <- iris1_2[,c("CODE_IRIS", "P14_POP", "centroid_l", "centroid_1", "departemen", "c", "w")]
-write.dbf(iris1_2, "IRIS_Guy_final/decoupage1-2.dbf")
+# iris1_2 <- read.dbf("../Resultats/decoupage_iris1-5/nouvelles_circonscriptions.dbf") # read.dbf("~/Downloads/CONTOURS-IRIS (1).dbf") # read.dbf("../Data/iris.dbf")  # read.dbf("IRIS_Guy_final/decoupage1-2 original.dbf")
+iris1_2 <- read.dbf("../Data/iris.dbf")
+# iris1_2 <- iris1_2[,c("CODE_IRIS", "P14_POP", "centroid_l", "centroid_1", "departemen", "c", "w")]
+# write.dbf(iris1_2, "IRIS_Guy_final/decoupage1-2.dbf")
 
 iris1_2['iris'] <- iris1_2['CODE_IRIS']
-iris1_2 <- iris1_2[c('P14_POP', 'iris')]
-resultats_iris1_2 <- read.dbf("IRIS_Guy_final/iris_decoupage1-5.dbf")
+# iris1_2 <- iris1_2[c('P14_POP', 'iris')]
+iris1_2 <- iris1_2[c('p18', 'iris')]
+# resultats_iris1_2 <- read.dbf("IRIS_Guy_final/iris_decoupage1-5.dbf")
+resultats_iris1_2 <- read.dbf("../Resultats/decoupage_iris1-5/decoupage_iris1-5.dbf")
 resultats_iris1_2 <- merge(resultats_iris1_2, iris1_2)
+names(resultats_iris1_2) <- c('iris', 'c', 'P14_POP')
 circos_iris <- aggregate(P14_POP ~ c, resultats_iris1_2, sum) # Les populations de chaque circo
 
 plot(seq(0,1, by=1/576), quantile(pop_circos/mean(pop_circos), probs=seq(0,1,by=1/576)), axes=FALSE, ylab="Population (par rapport à la moyenne)", xlab="Circonscriptions, des moins peuplées au plus peuplées",  type='s', lwd=2) + grid()
@@ -488,9 +492,27 @@ lines(seq(0,(nb_inf_nou-1)/319, by=1/319), sort(circos_iris$P14_POP)[1:nb_inf_no
 abline(h=seq(0.8,1.2,by=0.4), col="grey",lty=2) + abline(h=1, col="grey",lty=3)
 axis(2, at=c(0,0.4,0.8, 1.2,1.6,2,2.4,2.8)) + axis(1) + box()
 
+# Graphique pour f0rk
+old_mar <- par()$mar
+par(mar=c(5.1, 4.1, 1.1, 2.1))
+commune_intra_dep <- read.dbf("../Resultats/departement_commune-complete.dbf")
+iris_intra_dep <- read.dbf("../Resultats/departement_iris-complete.dbf")
+plot(seq(0,1, by=1/576), quantile(pop_circos/mean(pop_circos), probs=seq(0,1,by=1/576)), axes=FALSE, ylab="Population (par rapport à la moyenne)", xlab="Circonscriptions, des moins peuplées au plus peuplées",  type='s', lwd=2) + grid()
+# lines(seq(0,(nb_inf-1)/576, by=1/576), pop_circos[1:nb_inf]/mean(pop_circos), col="red", type="s", lwd=2)
+# lines(seq((577-nb_sup)/576,1, by=1/576), pop_circos[(578-nb_sup):577]/mean(pop_circos), col="red", type="s", lwd=2)
+# legend("topleft", title="Population des circonscriptions en proportion de la moyenne", text.col=c("black", "green", "orange"), lwd=2, lty=1, col=c("black", "green", "orange"), legend=c("Découpage actuel", "Découpage futur proposé", "Découpage futur intra-départemental"))
+legend("topleft", title="Population des circonscriptions en proportion de la moyenne", text.col=c("black", "green", "orange", "red"), lwd=2, lty=1, col=c("black", "green", "orange", "red"), legend=c("Découpage actuel", "Découpage IRIS inter-départemental", "Découpage IRIS intra-départemental", "Découpage communes intra-départemental"))
+lines(seq(0,1,by=1/319), sort(circos_iris$P14_POP)/mean(circos_iris$P14_POP), col="green", lwd=2, type='s')
+# lines(seq(0,(nb_inf_nou-1)/319, by=1/319), sort(circos_iris$P14_POP)[1:nb_inf_nou]/mean(circos_iris$P14_POP), col="red", type="s", lwd=2)
+lines(seq(0,1,by=1/325), sort(iris_intra_dep$pop)/mean(iris_intra_dep$pop), col="orange", lwd=2, type='s')
+lines(seq(0,1,by=1/325), sort(commune_intra_dep$pop)/mean(commune_intra_dep$pop), col="red", lwd=2, type='s')
+abline(h=seq(0.8,1.2,by=0.4), col="grey",lty=2) + abline(h=1, col="grey",lty=3)
+axis(2, at=c(0,0.4,0.8, 1.2,1.6,2,2.4,2.8)) + axis(1) + box()
+
+par(mar=old_mar)
+
 circos <- read.dbf("cantons_Guy_final/cantons_decoupage2-5.dbf")
 circos <- aggregate(pop ~ c, circos, sum) # Les populations de chaque circo
-
 plot(seq(0,1, by=1/576), quantile(pop_circos/mean(pop_circos), probs=seq(0,1, by=1/576)), axes=FALSE, ylab="Population (par rapport à la moyenne)", xlab="Circonscriptions, des moins peuplées au plus peuplées",  type='s', lwd=2) + grid()
 lines(seq(0,(nb_inf-1)/576, by=1/576), pop_circos[1:nb_inf]/mean(pop_circos), col="red", type="s", lwd=2)
 lines(seq((577-nb_sup)/576,1, by=1/576), pop_circos[(578-nb_sup):577]/mean(pop_circos), col="red", type="s", lwd=2)
@@ -500,17 +522,22 @@ lines(seq(0,(nb_inf_nou-1)/319, by=1/319), sort(circos$pop)[1:nb_inf_nou]/mean(c
 abline(h=seq(0.8,1.2,by=0.4), col="grey",lty=2) + abline(h=1, col="grey",lty=3)
 axis(2, at=c(0,0.4,0.8, 1.2,1.6,2,2.4,2.8)) + axis(1) + box()
 
+
 # Différence de population entre les extrêmes (en proportion de la moyenne), actuel:
 (pop_circos[576]-pop_circos[4])/mean(pop_circos) #  Max-min: 174% Hexagone seulement
 # et dans le redécoupage proposé:
 (max(circos_iris$P14_POP) - min(circos_iris$P14_POP))/mean(circos_iris$P14_POP) #  Max-min: 42%
 
 # Average absolute difference (i.e. écart moyen entre les populations de deux circonscriptions aléatoires: E[|X-Y|]):
-aad <- aad_nou <- 0
+aad <- aad_nou <- aad_nou_c <- aad_nou_i <- 0
 for (i in 1:577) {  for (j in 1:577) {    aad <- aad + abs(pop_circos[i] - pop_circos[j])  } }
 for (i in 1:320) {  for (j in 1:320) {    aad_nou <- aad_nou + abs(circos_iris$P14_POP[i] - circos_iris$P14_POP[j])  } }
+for (i in 1:326) {  for (j in 1:326) {    aad_nou_c <- aad_nou_c + abs(commune_intra_dep$pop[i] - commune_intra_dep$pop[j])  } }
+for (i in 1:326) {  for (j in 1:326) {    aad_nou_i <- aad_nou_i + abs(iris_intra_dep$pop[i] - iris_intra_dep$pop[j])  } }
 aad <- aad/577^2/mean(pop_circos) # actuel: 17.7% de la moyenne
-aad_nou <- aad_nou/320^2/mean(circos_iris$P14_POP) # proposé: 6.3% de la moyenne
+aad_nou <- aad_nou/320^2/mean(circos_iris$P14_POP) # proposé: 3.9% de la moyenne
+aad_nou_c <- aad_nou_c/326^2/mean(commune_intra_dep$pop) # proposé: 26.6% de la moyenne
+aad_nou_i <- aad_nou_i/326^2/mean(iris_intra_dep$pop) # proposé: 12.2% de la moyenne
 
 # Écart-type actuel (en proportion de la moyenne)
 sd(pop_circos)/mean(pop_circos) # sd: 20.5%

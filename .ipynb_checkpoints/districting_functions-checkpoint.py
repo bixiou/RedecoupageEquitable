@@ -50,6 +50,7 @@ def districting(data, nb_districts, save_path, stop_criteria=1.5, weight_step_sc
             if i not in [1,20,30,37,69,75,79]:
                 nb_cantons_i = int(list(nb_cantons[nb_cantons.departement==(i<10)*'0'+str(i)]['nb_cantons'])[0])
                 districting(data[i], nb_cantons_i, save_path+'_en_cantons_in_'+str(i), stop_criteria, weight_step_scale, it_max, clean)
+                # TODO: save
     else: 
         points = []
 
@@ -199,7 +200,7 @@ def kmeans_evolution_weighted(points, centers, k, distance_method=distance_try, 
     it_num = 0
 
     distsq = np.zeros(k)
-    while (it_num < it_max):
+    while (it_num < it_max): #TODO: save best
 
         # Print the clusters in debug mode
         if DEBUG:
@@ -277,7 +278,7 @@ def kmeans_evolution_weighted(points, centers, k, distance_method=distance_try, 
             pops.append(c["pop"])
 
         max_pop = max(pops)
-        min_pop = min(pops)
+        min_pop = min(pops)+0.0001
         
         # if it_num % 100 == 0: 
         if it_num%100==0 or max_pop/min_pop<1.3*stop_criteria: print(max_pop/min_pop)
