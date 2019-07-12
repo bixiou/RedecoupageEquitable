@@ -122,11 +122,14 @@ pop[nrow(pop)+1,] <- c("69389", 48824,48824-9016)
 
 # Population par circonscription actuelle (2013) Source: https://www.insee.fr/fr/statistiques/2508230
 pop_circos <- read_excel("pop_circos_2013.xls")
-pop_circos <- as.numeric(pop_circos[-c(1:7),]$X__3)
+dep_circos <- c(pop_circos[[1]][-c(1:7)], "Amérique Nord", "Amérique latine", "Europe Nord", "Benelux", "Ibère", "Suisse", "Europe centrale", "Méditerrannée", "Maghreb et Afrique Ouest", "Proche-Orient et Afrique", "Asie et autre")
+pop_circos <- as.numeric(pop_circos[[4]][-c(1:7)]) # Population municipale
 # Ajout des français de l'étranger à partir de Wikipédia: https://fr.wikipedia.org/wiki/Circonscriptions_l%C3%A9gislatives_des_Fran%C3%A7ais_%C3%A9tablis_hors_de_France
 # Renormalisation en termes de population totale et non d'inscrits. Source: , http://www.vie-publique.fr/focus/elections-2017-combien-electeurs-inscrits.html, https://fr.wikipedia.org/wiki/D%C3%A9mographie_de_la_France
 ratio_pop_inscrits <- 67/45.7
+dep_circos <- dep_circos[order(c(pop_circos,ratio_pop_inscrits*c(259390,101084,173477,185502,112029,179597,151576,137560,171290,158312,152371)))]
 pop_circos <- sort(c(pop_circos,ratio_pop_inscrits*c(259390,101084,173477,185502,112029,179597,151576,137560,171290,158312,152371))) 
+circos_actuelles <- data.frame(dep = dep_circos, pop = pop_circos, nb_in_dep = as.vector(table(dep_circos)[dep_circos]))
 
 
 ##### Préparation: résultats électoraux #####
@@ -389,9 +392,17 @@ nb_sup <- length(which(pop_circos>1.2*mean(pop_circos))) # 24, soit (24+47)/577=
 # et dans le redécoupage proposé:
 nb_inf_nou <- length(which(circos_nouvelles$pop<0.8*mean(circos_nouvelles$pop))) # 0
 nb_sup_nou <- length(which(circos_nouvelles$pop>1.2*mean(circos_nouvelles$pop))) # 2
+# Nombre de circonscriptions dont la population s'écarte de plus de 33% de la moyenne par le dessous, ce qui a été invalidé par le Conseil Constitutionnel
+#    pour Paris: https://www.conseil-constitutionnel.fr/decision/2013/2013667DC.htm
+nb_too_inf <- length(which(pop_circos<0.67*mean(pop_circos))) # 15, soit 2.6%
+circos_actuelles[1:nb_too_inf,]
+sum(circos_actuelles[circos_actuelles$dep=='39','pop'])/mean(circos_actuelles$pop) # 2.18: il devrait y avoir deux circos en 39 (Jura) mais il y en a 3, la 2è circo étant 65% de la pop moyenne. 
+sum(circos_actuelles[4,'pop'])/mean(circos_actuelles$pop)
+# nb_too_sup <- length(which(pop_circos>1.33*mean(pop_circos))) # 9, soit 1.6%
+# circos_actuelles[577:(577-nb_too_sup+1),]
 
 
-##### Graphique #####
+#### Graphique #####
 plot(seq(0,1, by=1/576), quantile(pop_circos/mean(pop_circos), probs=seq(0,1, by=1/576)), axes=FALSE, ylab="Population (par rapport à la moyenne)", xlab="Circonscriptions, des moins peuplées au plus peuplées",  type='s', lwd=2) + grid()
 lines(seq(0,(nb_inf-1)/576, by=1/576), pop_circos[1:nb_inf]/mean(pop_circos), col="red", type="s", lwd=2)
 lines(seq((577-nb_sup)/576,1, by=1/576), pop_circos[(578-nb_sup):577]/mean(pop_circos), col="red", type="s", lwd=2)
