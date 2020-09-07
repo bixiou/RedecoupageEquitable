@@ -582,7 +582,7 @@ temp <- temp[,names(temp)[which(!is.element(names(temp),groupes))]]
 deputes <- merge(deputes, temp, by='departement', all.x=TRUE)
 
 seuil <- function(r) sqrt(floor(r)*ceiling(r))
-parlementaires_par_departement <- function(nb_senateurs=244, nb_deputes=335) {
+parlementaires_par_departement <- function(nb_senateurs=244, nb_deputes=335, deputes = deputes) {
   pop_total <- sum(as.numeric(deputes$population[which(!duplicated(deputes$departement))]))
   departements <- dpts <- deputes[which(!duplicated(deputes$departement)),]
   prepare <- function(dpts, pop_parl) {
@@ -718,3 +718,116 @@ legend(x="topright", legend = c("Actuel", "Proposé"), col=c("black", "red"), lw
 ##### 6 circos de l'étranger #####
 etranger <- read.dbf('Monde/resultat moins naif.dbf')
 etranger <- aggregate(inscrits_r ~ Pays, etranger, sum)
+
+
+#### Proportionnelle par département et comparaisons #####
+## Nombre de députés envisagés : soit comme le Sénat actuel (348, dont 336 en métropole https://fr.wikipedia.org/wiki/S%C3%A9nateurs_repr%C3%A9sentant_les_Fran%C3%A7ais_%C3%A9tablis_hors_de_France), 
+##                               soit comme préconisé dans ce rapport p. 18 (403) http://www2.assemblee-nationale.fr/static/reforme-an/Rapport-1-GT.pdf
+elec2017_prep <- read_excel("Résultats présidentielle/2017_par_dep.xlsx")[,1:14] # source: https://www.data.gouv.fr/fr/datasets/r/53e2b3df-b89b-4df8-971d-7f2e0f02640a (contributions sur https://www.data.gouv.fr/fr/datasets/election-presidentielle-des-23-avril-et-7-mai-2017-resultats-du-1er-tour/)
+elec2017_prep$departement[1:9] <- paste("0", 1:9, sep='')
+francais_etranger <- data.frame('Peu Importe', "Français de l'étranger", '999', 1710945, 'groupe La République en marche !', '999', 'EM')
+names(francais_etranger) <- colnames(deputes)
+deputes_avec_etranger <- rbind(deputes, francais_etranger)
+# Généralement, dans les départements où il y a deux sénateurs, ils sont du même parti, à cause du scrutin majoritaire plurionimal à deux tours (les grands électeurs ont alors deux bulletins et on prend le candidat majoritaire)
+#   Exceptions (souvent droite & PRG): Cantal, Gers, Tarn, Tarn-et-Garonne, Haute-Vienne cf. e.g. https://fr.wikipedia.org/wiki/%C3%89lections_s%C3%A9natoriales_de_2014_en_Tarn-et-Garonne
+# Ici on suppose donc que c'est le candidat en tête entre gauche:Mélenchon/Macron/Fillon/populiste:LePen qui remporte le siège de tout département avec ce mode de scrutin (comme si des candidats pouvaient se désister au profit d'un autre)
+elec2017_prep$gauche <- elec2017_prep$Melenchon + elec2017_prep$Hamon + elec2017_prep$Poutou + elec2017_prep$Arthaud
+elec2017_prep$populiste <- elec2017_prep$LePen + elec2017_prep$`Dupont-Aignan` + elec2017_prep$Asselineau + elec2017_prep$Cheminade + elec2017_prep$Lassalle
+candidats_2e_tour_4 <- c('Macron', 'Fillon', 'gauche', 'populiste')
+candidats_2e_tour_attribution_4 <- c('Macron', 'Fillon', 'Melenchon', 'LePen')
+elec2017_prep$tete_2e_tour_4 <- candidats_2e_tour_attribution_4[argmax(elec2017_prep[, which(colnames(elec2017_prep) %in% candidats_2e_tour_4)])]
+elec2017_prep$score_tete_2e_tour_4 <- apply(elec2017_prep[, which(colnames(elec2017_prep) %in% candidats_2e_tour_4)], 1, function(x) return(max(x)/sum(x)))
+elec2017_prep$droite <- elec2017_prep$Macron + elec2017_prep$Fillon
+candidats_2e_tour <- c('gauche', 'populiste', 'droite')
+elec2017_prep$tete_2e_tour <- candidats_2e_tour[argmax(elec2017_prep[, which(colnames(elec2017_prep) %in% candidats_2e_tour)])]
+elec2017_prep$tete_2e_tour[elec2017_prep$tete_2e_tour!='droite'] <- ifelse(c(elec2017_prep$gauche > elec2017_prep$populiste)[elec2017_prep$tete_2e_tour!='droite'], 'Melenchon', 'LePen')
+elec2017_prep$tete_2e_tour[elec2017_prep$tete_2e_tour=='droite'] <- ifelse(c(elec2017_prep$Macron > elec2017_prep$Fillon)[elec2017_prep$tete_2e_tour=='droite'], 'Macron', 'Fillon')
+elec2017_prep$score_tete_2e_tour <- apply(elec2017_prep[, which(colnames(elec2017_prep) %in% candidats_2e_tour)], 1, function(x) return(max(x)/sum(x)))
+elec2017_prep$en_tete <- names(elec2017_prep)[3+argmax(elec2017_prep[, which(colnames(elec2017_prep) %in% candidats2017)])]
+
+elec2017 <- merge(elec2017_prep, parlementaires_par_departement(nb_deputes = 403, deputes = deputes_avec_etranger)[,c(4,6,8,9)])
+candidats2017 <- names(elec2017)[which(colnames(elec2017) %in% candidats2017)]
+
+## Préparation pour résultats contrefactuel 2017
+# En partant du 1er tour de la présidentielle et en appliquant pour chaque circo la méthode ci-dessus (pour mimer le scrutin majoritaire à deux tours) : 
+#   on regroupe toute la gauche, Macron + Fillon (en attribuant le siège à celui des deux avec le plus de voix), et les populistes (tout le reste)
+#   et on attribue le siège au candidat arrivé en tête (majorité relative, comme si des candidats s'étaient désisté au profit d'un autre)
+elec2017_circo <- read_excel("Résultats présidentielle/2017_par_circo.xlsx")[,1:13] # source: https://www.data.gouv.fr/fr/datasets/r/e141f7ae-50c5-4f1c-a01a-28bf5f37a1d4 (contributions sur https://www.data.gouv.fr/fr/datasets/election-presidentielle-des-23-avril-et-7-mai-2017-resultats-du-1er-tour/) + https://fr.wikipedia.org/wiki/R%C3%A9sultats_d%C3%A9taill%C3%A9s_de_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2017#Fran%C3%A7ais_de_l'%C3%A9tranger
+elec2017_circo$nb_dep <- 1
+elec2017_circo$gauche <- elec2017_circo$Melenchon + elec2017_circo$Hamon + elec2017_circo$Poutou + elec2017_circo$Arthaud
+elec2017_circo$populiste <- elec2017_circo$LePen + elec2017_circo$`Dupont-Aignan` + elec2017_circo$Asselineau + elec2017_circo$Cheminade + elec2017_circo$Lassalle
+candidats_2e_tour_4 <- c('Macron', 'Fillon', 'gauche', 'populiste')
+candidats_2e_tour_attribution_4 <- c('Macron', 'Fillon', 'Melenchon', 'LePen')
+elec2017_circo$tete_2e_tour_4 <- candidats_2e_tour_attribution_4[argmax(elec2017_circo[, which(colnames(elec2017_circo) %in% candidats_2e_tour_4)])]
+elec2017_circo$score_tete_2e_tour_4 <- apply(elec2017_circo[, which(colnames(elec2017_circo) %in% candidats_2e_tour_4)], 1, function(x) return(max(x)/sum(x)))
+elec2017_circo$droite <- elec2017_circo$Macron + elec2017_circo$Fillon
+candidats_2e_tour <- c('gauche', 'populiste', 'droite')
+elec2017_circo$tete_2e_tour <- candidats_2e_tour[argmax(elec2017_circo[, which(colnames(elec2017_circo) %in% candidats_2e_tour)])]
+elec2017_circo$tete_2e_tour[elec2017_circo$tete_2e_tour!='droite'] <- ifelse(c(elec2017_circo$gauche > elec2017_circo$populiste)[elec2017_circo$tete_2e_tour!='droite'], 'Melenchon', 'LePen')
+elec2017_circo$tete_2e_tour[elec2017_circo$tete_2e_tour=='droite'] <- ifelse(c(elec2017_circo$Macron > elec2017_circo$Fillon)[elec2017_circo$tete_2e_tour=='droite'], 'Macron', 'Fillon')
+elec2017_circo$score_tete_2e_tour <- apply(elec2017_circo[, which(colnames(elec2017_circo) %in% candidats_2e_tour)], 1, function(x) return(max(x)/sum(x)))
+elec2017_circo$en_tete <- names(elec2017_circo)[3+argmax(elec2017_circo[, which(colnames(elec2017_circo) %in% candidats2017)])]
+elec2017_circo <- data.frame(elec2017_circo)
+
+resultats_proportionnelle_par_dep <- function(nb_dep = 403, scrutin_majoritaire_petits_dep = F, par_circo = F, return_all = F, verbose = F) {
+  if (par_circo) data <- elec2017_circo
+  else data <- merge(elec2017_prep, parlementaires_par_departement(nb_deputes = nb_dep, deputes = deputes_avec_etranger)[,c(4,6,8,9)])
+  # /!\ Le nombre de sièges par département est déterminé en fonction de la population, donnant plus de pouvoir aux électeurs des départements à faible participation
+  for (p in candidats2017) data[[paste("nb_dep", nb_dep, p, sep = '_')]] <- NA
+  for (d in data$departement) {
+    nb_sieges_d <- data$nb_dep[which(data$departement==d)]
+    if ((scrutin_majoritaire_petits_dep | par_circo) & (nb_sieges_d <= 2)) nb_dep_d <- as.numeric(nb_sieges_d * (candidats2017 == data$tete_2e_tour[which(data$departement==d)]))
+    else {
+      if (verbose) nb_dep_d <- seats_ha(parties = candidats2017, votes = as.numeric(data[which(data$departement==d), which(colnames(data) %in% candidats2017)]), n_seats = nb_sieges_d, method = "dhondt")
+      else capture.output(nb_dep_d <- seats_ha(parties = candidats2017, votes = as.numeric(data[which(data$departement==d), which(colnames(data) %in% candidats2017)]), n_seats = nb_sieges_d, method = "dhondt")) }
+    data[which(data$departement==d), which(colnames(data) %in% paste("nb_dep", nb_dep, candidats2017, sep = '_'))] <- nb_dep_d } # méthode d'Hondt: http://www.senat.fr/role/senate.html 
+  nb_deps <- colSums(data[, which(colnames(data) %in% paste("nb_dep", nb_dep, candidats2017, sep = '_'))])
+  names(nb_deps) <- candidats2017
+  if (return_all) return(data)
+  else return(nb_deps)
+}
+
+proportionnelle_integrale <- colSums(elec2017[, which(colnames(elec2017) %in% candidats2017)])/sum(elec2017[, which(colnames(elec2017) %in% candidats2017)])
+round(proportionnelle_integrale, 4)
+proportionnelle_integrale_577 <- seats_ha(parties = candidats2017, votes = colSums(elec2017[, which(colnames(elec2017) %in% candidats2017)]), n_seats = 577, method = "dhondt")
+round(proportionnelle_integrale_577/577, 3) # pas de majorité (à part Macron + Fillon + Hamon (50.38%) ou Macron + Mélenchon + Hamon + Poutou (51.04%) ou Le Pen + Fillon + Macron (65.32%))
+proportionnelle_integrale_403 <- seats_ha(parties = candidats2017, votes = colSums(elec2017[, which(colnames(elec2017) %in% candidats2017)]), n_seats = 403, method = "dhondt")
+round(proportionnelle_integrale_403/403, 3) # pas de majorité (à part Macron + Fillon + Hamon (50.38%) ou Macron + Mélenchon + Hamon + Poutou (51.04%) ou Le Pen + Fillon + Macron (65.32%))
+proportionnelle_integrale_348 <- seats_ha(parties = candidats2017, votes = colSums(elec2017[, which(colnames(elec2017) %in% candidats2017)]), n_seats = 348, method = "dhondt")
+round(proportionnelle_integrale_348/348, 3) # pas de majorité (à part Macron + Fillon + Hamon (50.38%) ou Macron + Mélenchon + Hamon + Poutou (51.04%) ou Le Pen + Fillon + Macron (65.32%))
+nb_deps_348 <- resultats_proportionnelle_par_dep(348) # majorité Macron + Fillon: 181 (majorité à 168)
+round(nb_deps_348/348, 3)
+nb_deps_403 <- resultats_proportionnelle_par_dep(403) # majorité Macron + Fillon: 210 (majorité à 202)
+round(nb_deps_403/403, 3)
+nb_deps_577 <- resultats_proportionnelle_par_dep(577) # courte majorité Macron + Fillon: 292 (majorité à 289)
+round(nb_deps_577/577, 3)
+nb_deps_348_majo <- resultats_proportionnelle_par_dep(348, scrutin_majoritaire_petits_dep = T) # majorité Macron + Fillon: 207 (majorité à 168)
+round(nb_deps_348_majo/348, 3) 
+nb_deps_403_majo <- resultats_proportionnelle_par_dep(403, scrutin_majoritaire_petits_dep = T) # majorité Macron + Fillon: 236 (majorité à 202)
+round(nb_deps_403_majo/403, 3)
+nb_deps_577_majo <- resultats_proportionnelle_par_dep(577, scrutin_majoritaire_petits_dep = T) # majorité Macron + Fillon: 305 (majorité à 289)
+round(nb_deps_577_majo/577, 3)
+resultats2017 <- c(8+1, 308+42+18, 17+10, 112+6, 30+12+3+1, 1, 8, 0, 0, 0, 0)
+names(resultats2017) <- candidats2017
+round(resultats2017/577, 3)
+resultats2017_contrefactuel <- resultats_proportionnelle_par_dep(par_circo = T)
+round(resultats2017_contrefactuel/577, 3)
+
+
+##### Graphiques comparaison systèmes électoraux #####
+Candidats2017 <- candidats2017[ordre_gauche_droite]
+Candidats2017[c(3, 11)] <- c("Mélenchon", "Le Pen")
+ordre_gauche_droite <- c(10,8,3,5,11,7,2,4,9,6,1)
+couleurs_gauche_droite <- c('darkred', 'red4', 'red', 'hotpink', 'dimgray', 'darkgrey', 'gold', 'dodgerblue', 'mediumblue', 'darkblue', 'midnightblue')
+data_elections2017_3 <- cbind(proportionnelle_integrale_403/403, nb_deps_403/403, nb_deps_403_majo/403)[ordre_gauche_droite,] # matrix(c(), nrow = 11, ncol = 4)
+data_elections2017_4 <- cbind(proportionnelle_integrale_403/403, nb_deps_403/403, nb_deps_403_majo/403, resultats2017/577)[ordre_gauche_droite,]
+data_elections2017_5 <- cbind(proportionnelle_integrale_577/577, nb_deps_577/577, nb_deps_577_majo/577, resultats2017_contrefactuel/577, resultats2017/577)[ordre_gauche_droite,]
+
+(elections2017_3 <- barres(data = data_elections2017_3, rev = T,  color = couleurs_gauche_droite, miss = F, legend = Candidats2017, labels=c("Proportionnelle intégrale", "Proportionnelle par département", "Proportionnelle pour les grands départements,\n scrutin majoritaire pour les petits")))
+save_plotly(elections2017_3)
+
+(elections2017_4 <- barres(data = data_elections2017_4, rev = T,  color = couleurs_gauche_droite, miss = F, legend = Candidats2017, labels=c("Proportionnelle intégrale", "Proportionnelle par département", "Proportionnelle pour les grands départements,\n scrutin majoritaire pour les petits", "Résultat des législatives")))
+save_plotly(elections2017_4)
+
+(elections2017_5 <- barres(data = data_elections2017_5, rev = T,  color = couleurs_gauche_droite, miss = F, legend = Candidats2017, labels=c("Proportionnelle intégrale", "Proportionnelle par département", "Proportionnelle pour les grands départements,\n scrutin majoritaire pour les petits", "Résultat des législatives", "Résultat contrefactuel des législatives")))
+save_plotly(elections2017_5)
