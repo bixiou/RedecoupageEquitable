@@ -1,8 +1,9 @@
-linux <- TRUE
+linux <- F
 if (linux) { options(download.file.method = "wget") # For Ubuntu 14.04
 } else options(download.file.method = "auto")
 
 library(utils)
+writeLines('PATH="${RTOOLS40_HOME}\\usr\\bin;${PATH}"', con = "~/.Renviron")
 
 package <- function(p) { 
   if (!is.element(p, installed.packages()[,1])) {
@@ -22,11 +23,11 @@ package("electoral")
 package("stringr")
 # package("magick") # Bug sur Ubuntu, ne surtout pas décommenter sur Ubuntu
 library(magick) # TODO
-Sys.setenv("PATH" = paste(Sys.getenv("PATH"), "/home/adrien/anaconda3/bin", sep = .Platform$path.sep))
+# Sys.setenv("PATH" = paste(Sys.getenv("PATH"), "/home/adrien/anaconda3/bin", sep = .Platform$path.sep))
 package("plotly")
 
 # setwd("/var/www/We give the 99 percents/Redécoupage") # /!\ Changer le chemin d'accès
-setwd("/var/www/RedecoupageEquitable/Annexes") # /!\ Changer le chemin d'accès
+setwd("./Annexes") # /!\ Changer le chemin d'accès
 load("env.RData")
 
 

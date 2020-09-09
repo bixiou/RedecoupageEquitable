@@ -862,6 +862,20 @@ nb_deps_577_majo_4 <- resultats_proportionnelle_par_dep(577, scrutin_majoritaire
 round(nb_deps_577_majo_4/577, 3)
 
 ##### Graphiques comparaison systèmes électoraux #####
+# _1 (void): gauche vs populiste (= autres) vs Macron/Fillon (x/y signifie se répartir les circos en fonction de leur majorité relative)
+# _2: gauche vs Le Pen vs Macron/Fillon 
+# _3: a. (gauche vs Le Pen) vs b. Macron/Fillon puis si a. 1.5*gauche vs Le Pen sinon b. gauche si gauche > 1.5*max(Macron, Fillon). Enfin si gauche, Melenchon vs 4.3 Hamon
+# _4: Melenchon vs Macron vs Fillon vs Le Pen
+# 1, 2 et 4 peuvent s'interpréter comme des reports de voix, avec désistements Macron/Fillon dans chaque circo pour 1 et 2.
+# 3 pas vraiment, c'est plus un faux arbre de décision pour retrouver les résultats des législatives à partir des présidentielle (faux surtout car il ne maximise pas l'acuité/accuracy circo par circo)
+# Comme on doit hypothétiser des stratégies d'alliance entre partis face au nouveau mode de scrutin, le 3 ne semble pas pertinent/applicable
+# Par contre, il est logique que 1, 2 et 4 ne performent parfois pas bien au contrefactuel
+#  surtout, 1 et 2 ne conviennent pas car ils supposent une alliance Macron/Fillon qui n'a pas eu lieu, et n'est pas codée dans la proportionnelle par département (mais c'est logique que l'alliance se limite aux départements sans proportionnelle donc ok sur ce second point)
+# A la limite on pourrait argumenter que 3 proxies les choix des électeurs et les stratégies des partis locales variables (ex: b. parfois alliances des droites parfois non; a. prime républicaine), mais hypothèse à justifier que ça ne varierait pas avec le mode de scrutin
+# TODO: coder alliance des gauches pour proportionnelle par département
+# TODO: coder dose de proportionnelle nationale + circos
+# suggestion: coder règle de maintien au 2nd tour: seuil à 12.5%
+# TODO: Utiliser 2 (alliance à droite), 3 (comme mtn) et 5 (alliance à gauche) (voire 6 alliance dans les deux) pour montrer que ça change pas grand chose au système avec majoritaire ds petits départements (aucune alliance improbable, cf. 4)
 Candidats2017 <- candidats2017[ordre_gauche_droite]
 Candidats2017[c(3, 11)] <- c("Mélenchon", "Le Pen")
 ordre_gauche_droite <- c(10,8,3,5,11,7,2,4,9,6,1)
