@@ -694,8 +694,8 @@ grand_electeur <- function(nb_hab) {
 }
 sous40k <- seq(0,40000,by=100)
 sous60k <- seq(0,60000,by=100)
-sous100k <- seq(0,95000,by=1000)
-sous500k <- seq(0,500000,by=1000)
+sous100k <- seq(0,95000,by=100) # seq(0,95000,by=1000)
+sous500k <- seq(0,500000,by=1000) # by=1000
 plot(sous40k, grand_electeur(sous40k), type='l', main="Nombre de grands électeurs par commune", xlab="Population de la commune", ylab="Nombre de grands électeurs")
 plot(sous60k, grand_electeur(sous60k), type='l', main="Nombre de grands électeurs par commune", xlab="Population de la commune", ylab="Nombre de grands électeurs")
 plot(sous100k, grand_electeur(sous100k), type='l', main="Nombre de grands électeurs par commune", xlab="Population de la commune", ylab="Nombre de grands électeurs")
